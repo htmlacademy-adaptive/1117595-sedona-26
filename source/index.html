@@ -1,12 +1,110 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body class="body_page">
+  <header class="main-header">
+    <img class="main-logo" src="\source\img\htmlacademy.svg" alt="логотип седона" width="50" height="50">
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--current">
+          <a href="#">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Фото и Видео</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Форма Отзыва</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-container">
+    <h1 class="visually-hidden">Городок Седона</h1>
+    <section class="main-intro">
+      <h2 class="visually-hidden">Приглашение</h1>
+        <div class="main-intro__background">
+          <img class="main-intro__image" src="\source\img\htmlacademy.svg" alt="Картинка с приветствием - Welcome to the gorgeous Sedona, becouse the Grand Canyon sucks!" width="50" height="50">
+        </div>
+        <p class="main-intro__slogan">
+          СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!
+        </p>
+    </section>
+
+    <section class="features">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <p class="features__intro">
+        Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+      </p>
+      <ul class="features__list">
+        <li class="features__item">
+          <div class="features__descr descr">
+            <h3 class="descr__title">НАСТОЯЩИЙ ГОРОДОК</h3>
+            <span class="descr__number">— №1 —</span>
+            <p class="descr__legend">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+          </div>
+          <img class="features__pic" src="\source\img\htmlacademy.svg" alt="фотография жилья" width="50" height="50">
+          <ul class="features__sublist sublist">
+            <li class="sublist__item">
+              <h3 class="sublist__title icon-home">Жилье</h3>
+              <p class="sublist__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="sublist__item">
+              <h3 class="sublist__title icon-food">Еда</h3>
+              <p class="sublist__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+            </li>
+            <li class="sublist__item">
+              <h3 class="sublist__title icon-gift">СУВЕНИРЫ</h3>
+              <p class="sublist__description">Не только китайского, но и местного производства!</p>
+            </li>
+
+            <li class="features__item">
+              <div class="features__descr descr">
+                <h3 class="descr__title">ТАМ ЕСТЬ Мост дьявола</h3>
+                <span class="descr__number">— №2 —</span>
+                <p class="descr__legend">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              </div>
+              <img class="features__pic" src="\source\img\htmlacademy.svg" alt="фотография моста" width="50" height="50">
+              <ul class="features__sublist second-sublist">
+                <li class="second-sublist__item">
+                  <h3 class="second-sublist__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+                  <span class="second-sublist__number">— №3 —</span>
+                  <p class="second-sublist__description">ВСЕ интересные места находятся очень близко</p>
+                </li>
+                <li class="second-sublist__item">
+                  <h3 class="second-sublist__title">КРАСИВАЯ ДОРОГА</h3>
+                  <span class="second-sublist__number">— №4 —</span>
+                  <p class="second-sublist__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+                </li>
+                <li class="second-sublist__item">
+                  <h3 class="second-sublist__title">МАЛО ТУРИСТОВ</h3>
+                  <span class="second-sublist__number">— №5 —</span>
+                  <p class="second-sublist__description">Большинство едет в гранд каньон и толпится там</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+    </section>
+
+    <section class="search">
+      <h2 class="visually-hidden">Поиск жилья</h2>
+      <p class="search__text">ЗАИНТЕРЕСОВАЛИСЬ?<<b></b></p>
+      <p class="search__text-date">Укажите предполагаемые датыпоездки, и мы покажем вам лучшиепредложения гостиниц в седоне</p>
+      <button class="search__button" type="button">Найти Гостиницу</button>
+      <img class="search__map" src="\source\img\htmlacademy.svg" alt="карта местности" width="50" height="50">
+    </section>
+  </main>
+
+</body>
+
 </html>
