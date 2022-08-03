@@ -9,8 +9,8 @@
 <body class="body_page">
 
   <header class="main-header">
-    <a href="index.html">
-      <img class="main-logo" src="img/icons/htmlacademy.svg" alt="логотип седона" width="50" height="50">
+    <a class="main-header__logo-link" href="index.html">
+      <img class="main-header__logo" src="img/logo-sedona.png" alt="логотип седона" width="185" height="96">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -18,16 +18,16 @@
       </button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a href="#">Главная</a>
+          <a href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a href="#">Фото и Видео</a>
+          <a href="catalog.html">Фото и Видео</a>
         </li>
         <li class="main-nav__item main-nav__item--current">
           <a href="#">Форма Отзыва</a>
         </li>
         <li class="main-nav__item">
-          <a href="#">HTML Academy</a>
+          <a href="https://htmlacademy.ru/">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -36,7 +36,7 @@
   <main class="form-container">
     <h1 class="visually-hidden">Страница обратной связи</h1>
     <header class="form-container__hero hero">
-      <img class="hero__image" src="source/img/htmlacademy.svg" alt="Надпись Sedona" width="50" height="50">
+      <img class="hero__image" src="img/text-index-sedona.svg" alt="Надпись Sedona" width="229" height="39">
       <h2 class="hero__title">Оставьте свой отзыв</h2>
       <p class="hero__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </header>
@@ -80,16 +80,16 @@
           <legend class="form-group__title">Ваше общее впечатление:</legend>
           <ul class="form-group__list field-list">
             <li class="field-list__item">
-              <label class="field-list__rating" for="effect-one">Скорее положительное</label>
               <input class="field-list__radio field-list__rating-checked visually-hidden" type="radio" id="effect-one" name="effect-one" checked>
+              <label class="field-list__rating" for="effect-one">Скорее положительное</label>
             </li>
             <li class="field-list__item">
-              <label class="field-list__rating" for="effect-two">Скорее отрицательное</label>
               <input class="field-list__radio visually-hidden" type="radio" id="effect-two" name="effect-two">
+              <label class="field-list__rating" for="effect-two">Скорее отрицательное</label>
             </li>
             <li class="field-list__item">
-              <label class="field-list__rating" for="effect-three">Затрудняюсь ответить</label>
               <input class="field-list__radio visually-hidden" type="radio" id="effect-three" name="effect-three">
+              <label class="field-list__rating" for="effect-three">Затрудняюсь ответить</label>
             </li>
           </ul>
         </fieldset>
@@ -98,20 +98,20 @@
           <legend class="form-group__title">Посещенные достопримечательности:</legend>
           <ul class="form-group__list field-list">
             <li class="field-list__item">
-              <label class="field-list__place" for="bridge">Мост Дьявола</label>
               <input class="field-list__check field-list__check-checked visually-hidden" type="checkbox" id="bridge" name="bridge" checked>
+              <label class="field-list__place" for="bridge">Мост Дьявола</label>
             </li>
             <li class="field-list__item">
-              <label class="field-list__place" for="hill">Гора-Колокол</label>
               <input class="field-list__check field-list__check-checked visually-hidden" type="checkbox" id="hill" name="hill" checked>
+              <label class="field-list__place" for="hill">Гора-Колокол</label>
             </li>
             <li class="field-list__item">
-              <label class="field-list__place" for="park">Слайд-парк</label>
               <input class="field-list__check field-list__check-checked visually-hidden" type="checkbox" id="park" name="park" checked>
+              <label class="field-list__place" for="park">Слайд-парк</label>
             </li>
             <li class="field-list__item">
-              <label class="field-list__place" for="rocks">Красные скалы</label>
               <input class="field-list__check visually-hidden" type="checkbox" id="rocks" name="rocks">
+              <label class="field-list__place" for="rocks">Красные скалы</label>
             </li>
           </ul>
         </fieldset>
@@ -131,7 +131,7 @@
 
   <footer class="main-footer">
     <p class="main-footer__tag">#visitSEDONA</p>
-    <ul class="main-footer__social-list social">
+    <ul class="main-footer__list social">
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="#" target="_blank">вконтакте</a>
       </li>
@@ -145,7 +145,6 @@
     <div class="footer__copyright copyright">
       <b class="copyright__text">Разработано</b>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-        <svg></svg>
       </a>
     </div>
   </footer>

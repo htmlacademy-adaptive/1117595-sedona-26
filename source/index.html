@@ -9,7 +9,7 @@
 <body class="body_page">
 
   <header class="main-header">
-    <img class="main-logo" src="img/icons/htmlacademy.svg" alt="логотип седона" width="50" height="50">
+    <img class="main-header__logo" src="img/logo-sedona.png" alt="логотип седона" width="185" height="96">
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -19,13 +19,13 @@
           <a href="#">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a href="#">Фото и Видео</a>
+          <a href="catalog.html">Фото и Видео</a>
         </li>
         <li class="main-nav__item">
-          <a href="#">Форма Отзыва</a>
+          <a href="form.html">Форма Отзыва</a>
         </li>
         <li class="main-nav__item">
-          <a href="#">HTML Academy</a>
+          <a href="https://htmlacademy.ru/">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -34,7 +34,7 @@
   <main class="main-container">
     <h1 class="visually-hidden">Городок Седона</h1>
     <header class="main-container__hero hero">
-      <img class="hero__image" src="source/img/htmlacademy.svg" alt="Картинка с приветствием - Welcome to the gorgeous Sedona, becouse the Grand Canyon sucks!" width="50" height="50">
+      <img class="hero__image" src="img/text-index.svg" alt="Картинка с приветствием - Welcome to the gorgeous Sedona, becouse the Grand Canyon sucks!" width="282" height="214">
       <h2 class="hero__title">
         СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!
       </h2>
@@ -53,7 +53,7 @@
             <span class="descr__number">— №1 —</span>
             <p class="descr__legend">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img class="features__pic" src="source/img/htmlacademy.svg" alt="фотография жилья" width="50" height="50">
+          <img class="features__pic" src="img/photo-city_s.png" alt="фотография жилья" width="520" height="260">
           <ul class="features__sublist sublist">
             <li class="sublist__item">
               <h3 class="sublist__title icon-home">Жилье</h3>
@@ -74,7 +74,7 @@
             <span class="descr__number">— №2 —</span>
             <p class="descr__legend">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <img class="features__pic" src="source/img/htmlacademy.svg" alt="фотография моста" width="50" height="50">
+          <img class="features__pic" src="img/photo-bridge_s.png" alt="фотография моста" width="520" height="260">
           <ul class="features__sublist second-sublist">
             <li class="second-sublist__item">
               <h3 class="second-sublist__title">Небольшая площадь</h3>
@@ -98,10 +98,12 @@
 
     <section class="search">
       <h2 class="visually-hidden">Поиск жилья</h2>
-      <p class="search__text"><b>Заинтересовались?</b></p>
-      <p class="search__text-date">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button class="search__button button" type="button">Найти Гостиницу</button>
-      <img class="search__map" src="source/img/htmlacademy.svg" alt="карта местности" width="50" height="50">
+      <div class="search__wrapper">
+        <p class="search__text"><b>Заинтересовались?</b></p>
+        <p class="search__text-date">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="search__button button" type="button">Найти Гостиницу</button>
+      </div>
+      <img class="search__map" src="img/map_s.png" alt="карта местности" width="320" height="350">
     </section>
   </main>
 
@@ -120,9 +122,7 @@
     </ul>
     <div class="footer__copyright copyright">
       <b class="copyright__text">Разработано</b>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link" target="_blank">
-        <svg></svg>
-      </a>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link" target="_blank"></a>
     </div>
   </footer>
 </body>
