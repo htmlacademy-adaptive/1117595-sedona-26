@@ -1,0 +1,21 @@
+.descr {
+  background-color: $basic-blue;
+  color: $basic-white;
+}
+
+.descr__title {
+  font-size: 18px;
+  margin: 0;
+}
+
+.descr__number {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.descr__legend {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  margin: 0;
+}

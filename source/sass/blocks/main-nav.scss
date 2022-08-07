@@ -1,4 +1,17 @@
+.main-nav {
+  background-color: $basic-blue;
+}
+
 .main-nav__list {
   @include list-reset;
-  margin-left: 100px;
+  text-align: center;
+}
+
+.main-nav__item {
+  margin-bottom: 30px;
+}
+
+.main-nav__list a {
+  text-decoration: none;
+  color: $basic-white;
 }
