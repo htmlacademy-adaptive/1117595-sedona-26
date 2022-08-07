@@ -1,5 +1,13 @@
-.body__page {
-  margin: 0;
+.page {
   font-family: "PT sans", "Arial", sans-serif;
-  outline: 5px solid #000000;
+  height: 100%;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  background-color: $basic-white;
+  color: $basic-black;
 }
