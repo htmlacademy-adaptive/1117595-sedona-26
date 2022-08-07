@@ -1,7 +1,12 @@
-@use "./global/fonts.scss";
-@use "./global/variables.scss";
-@use "./global/mixins.scss";
-@use "./global/global.scss";
-@use "./blocks/page.scss";
-@use "./blocks/main-header.scss";
-@use "./blocks/main-nav.scss";
+// Global
+
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/global.scss";
+
+// Blocks
+
+@import "blocks/page.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-nav.scss";
