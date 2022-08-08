@@ -25,3 +25,7 @@
   resize: none;
   padding: 16px;
 }
+
+.form-group__comment::placeholder {
+  color: rgb($basic-black, 0.3);
+}
