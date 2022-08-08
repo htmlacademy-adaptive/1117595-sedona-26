@@ -1,0 +1,7 @@
+.main-footer__tag {
+  margin: 0;
+}
+
+.main-footer__social-list {
+  @include list-reset;
+}

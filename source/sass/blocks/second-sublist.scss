@@ -1,0 +1,23 @@
+.second-sublist {
+  background-color: $gray;
+}
+
+.second-sublist__title {
+  font-size: 18px;
+  margin: 0;
+}
+
+.second-sublist__number {
+  color: $darkengray;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.second-sublist__description {
+  color: $darkengray;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  margin: 0;
+}

@@ -1,0 +1,15 @@
+.page {
+  font-family: "PT sans", "Arial", sans-serif;
+  height: 100%;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  background-color: $basic-white;
+  color: $basic-black;
+  text-transform: uppercase;
+  text-align: center;
+}

@@ -1,0 +1,29 @@
+.field-list__item {
+  margin-bottom: 15px;
+}
+
+.field-list__title {
+  color: $darkengray;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.field-list__input {
+  border: none;
+  background-color: $lightengray;
+  color: $basic-black;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  padding: 16px 0 16px 16px;
+}
+
+.field-list__input::placeholder {
+  color: rgba($basic-black, 0.3);
+}
+
+.field-list__rating,
+.field-list__place {
+  text-transform: none;
+  font-weight: bold;
+}
