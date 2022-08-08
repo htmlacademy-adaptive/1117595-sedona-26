@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/1117595-sedona-26/3/">
+</head>
+
+<body class="body__page">
+
+  <header class="main-header">
+    <a class="main-header__logo-link" href="index.html">
+      <img class="main-header__logo" src="img/logo-sedona.png" alt="логотип седона" width="185" height="96">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item main-nav__item--current">
+          <a href="#">Фото и Видео</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="form.html">Форма Отзыва</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="https://htmlacademy.ru/">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="catalog-container">
+    <header class="catalog-container__hero hero">
+      <img class="hero__image" src="img/text-index-sedona.svg" alt="Надпись Sedona" width="229" height="39">
+      <h1 class="hero__title">Фото и видео</h1>
+      <p class="hero__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+    </header>
+
+    <section class="gallery">
+      <h2 class="visually-hidden">Галлерея</h2>
+      <ul class="gallery__list">
+        <li class="gallery__item">
+          <figure class="gallery__picture picture">
+            <a class="picture__link" href="#">
+              <img class="picture__link-photo" src="img/open-spaces_s.jpg" alt="фото - дорога в закат" width="280" height="280">
+            </a>
+            <figcaption class="picture__descr">
+              <h3 class="picture__descr-title">Неродные просторы</h3>
+              <p class="picture__descr-author">Автор фото: Борис</p>
+            </figcaption>
+          </figure>
+          <div class="gallery__item-counter likes">
+            <button class="likes__count">
+              <span class="visually-hidden">кнопка лайков</span>
+            </button>
+            <span class="likes__sum">1350</span>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <figure class="gallery__picture picture">
+            <a class="picture__link" href="#">
+              <img class="picture__link-photo" src="img/greenery_s.jpg" alt="фото кактуса" width="280" height="280">
+            </a>
+            <figcaption class="picture__descr">
+              <h3 class="picture__descr-title">Местная растительность</h3>
+              <p class="picture__descr-author">Автор фото: Сергей</p>
+            </figcaption>
+          </figure>
+          <div class="gallery__item-counter likes">
+            <button class="likes__count">
+              <span class="visually-hidden">кнопка лайков</span>
+            </button>
+            <span class="likes__sum">143</span>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <figure class="gallery__picture picture">
+            <a class="picture__link" href="#">
+              <img class="picture__link-photo" src="img/road_s.jpg" alt="фото - серпантин и лес" width="280" height="280">
+            </a>
+            <figcaption class="picture__descr">
+              <h3 class="picture__descr-title">Дорога на север</h3>
+              <p class="picture__descr-author">Автор фото: Петр</p>
+            </figcaption>
+          </figure>
+          <div class="gallery__item-counter likes">
+            <button class="likes__count">
+              <span class="visually-hidden">кнопка лайков</span>
+            </button>
+            <span class="likes__sum">96</span>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <figure class="gallery__picture picture">
+            <a class="picture__link" href="#">
+              <img class="picture__link-photo" src="img/bridge_s.jpg" alt="фото - мост дьявола" width="280" height="280">
+            </a>
+            <figcaption class="picture__descr">
+              <h3 class="picture__descr-title">Мост дьявола</h3>
+              <p class="picture__descr-author">Автор фото: Антон</p>
+            </figcaption>
+          </figure>
+          <div class="gallery__item-counter likes">
+            <button class="likes__count">
+              <span class="visually-hidden">кнопка лайков</span>
+            </button>
+            <span class="likes__sum">254</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="presentation">
+      <h2 class="visually-hidden">Презентация</h2>
+      <p class="presentation__title">
+        Все еще сомневаетесь?
+      </p>
+      <p class="presentation__text">
+        Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+      </p>
+      <img class="presentation__preview" src="img/preview-video_s.jpg" alt="фото - дорога, машины, скалы, растительность" width="280" height="177">
+      <button class="presentation__preview-buton"><span class="visually-hidden">вкл и выкл видео</span></button>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p class="main-footer__tag">#visitSEDONA</p>
+    <ul class="main-footer__list social">
+      <li class="social__item">
+        <a class="social__link social__link--vkontakte" href="#" target="_blank">вконтакте</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--telegram" href="#" target="_blank">телеграм</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="#" target="_blank">ютуб</a>
+      </li>
+    </ul>
+    <div class="footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link" target="_blank">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
