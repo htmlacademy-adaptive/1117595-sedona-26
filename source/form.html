@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="body__page">
+<body class="page__body">
 
   <header class="main-header">
     <a class="main-header__logo-link" href="index.html">
@@ -39,7 +39,9 @@
   <main class="form-container">
     <h1 class="visually-hidden">Страница обратной связи</h1>
     <header class="form-container__hero hero">
-      <img class="hero__image" src="img/text-index-sedona.svg" alt="Надпись Sedona" width="229" height="39">
+      <div class="hero__background">
+        <img class="hero__image" src="img/text-index-sedona.svg" alt="Надпись Sedona" width="229" height="39">
+      </div>
       <h2 class="hero__title">Оставьте свой отзыв</h2>
       <p class="hero__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </header>
@@ -134,7 +136,7 @@
 
   <footer class="main-footer">
     <p class="main-footer__tag">#visitSEDONA</p>
-    <ul class="main-footer__list social">
+    <ul class="main-footer__social-list social">
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="#" target="_blank">вконтакте</a>
       </li>
@@ -147,14 +149,13 @@
     </ul>
     <div class="footer__copyright copyright">
       <b class="copyright__text">Разработано</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-      </a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"></a>
     </div>
   </footer>
 
   <!-- МОДАЛЬНЫЕ ОКНА  -->
 
-  <div class="modal-fail modal-wrapper">
+  <div class="modal-fail modal-fail--hidden modal-wrapper">
     <h2 class="modal-fail__title">
       Что-то пошло не так!
     </h2>
@@ -164,7 +165,7 @@
     <button class="modal-fail__button button">Ок</button>
   </div>
 
-  <div class="modal-succes modal-wrapper">
+  <div class="modal-succes modal-succes--hidden modal-wrapper">
     <h2 class="modal-succes__title">
       Ваш отзыв отправлен!
     </h2>
