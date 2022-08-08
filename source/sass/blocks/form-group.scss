@@ -1,0 +1,27 @@
+.form-group {
+  border: none;
+  margin: 0 0 60px 0;
+  padding: 0;
+}
+
+.form-group__title {
+  font-weight: bold;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.form-group__list {
+  @include list-reset;
+}
+
+.form-group__comment {
+  border: none;
+  background-color: $lightengray;
+  color: $basic-black;
+  font-family: "PT sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  resize: none;
+  padding: 16px;
+}

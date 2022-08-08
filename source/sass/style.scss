@@ -7,6 +7,7 @@
 
 // Blocks
 
+// index
 @import "blocks/page.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/main-header.scss";
@@ -22,3 +23,9 @@
 @import "blocks/main-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
+// form
+@import "blocks/form.scss";
+@import "blocks/form-group.scss";
+@import "blocks/field-list.scss";
+@import "blocks/modal-fail.scss";
+@import "blocks/modal-succes.scss";
