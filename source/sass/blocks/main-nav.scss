@@ -15,3 +15,25 @@
   text-decoration: none;
   color: $basic-white;
 }
+
+.main-nav__wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__wrapper {
+    width: 640px;
+    padding: 0 64px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    column-gap: 20px;
+  }
+}
+
+.main-nav__toggle {
+  display: block;
+  width: 30px;
+  position: absolute;
+}
