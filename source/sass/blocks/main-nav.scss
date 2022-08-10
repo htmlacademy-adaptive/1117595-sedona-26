@@ -2,9 +2,14 @@
   background-color: $basic-blue;
 }
 
+@media (min-width: $tablet-width) {
+  .main-nav {
+    background-color: $basic-white;
+  }
+}
+
 .main-nav__list {
   @include list-reset;
-  text-align: center;
 }
 
 .main-nav__item {
@@ -14,6 +19,18 @@
 .main-nav__list a {
   text-decoration: none;
   color: $basic-white;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list a {
+    color: $basic-black;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .main-nav__item--current {
+    color: $darkgray-active;
+  }
 }
 
 .main-nav__wrapper {
@@ -27,8 +44,12 @@
     width: 640px;
     padding: 0 64px;
     display: grid;
-    grid-template-columns: repeat(4, minmax(100px, 1fr));
-    column-gap: 20px;
+    grid-template-columns: repeat(5, minmax(auto, 1fr));
+    column-gap: 10px;
+  }
+
+  .main-nav__item:nth-child(4n+2) {
+    grid-column: span 2;
   }
 }
 
