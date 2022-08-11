@@ -12,9 +12,9 @@
   @include list-reset;
 }
 
-.main-nav__item {
-  margin-bottom: 30px;
-}
+/*.main-nav__item {
+  padding: 13px 10px;
+}*/
 
 .main-nav__list a {
   display: block;
@@ -37,23 +37,22 @@
 
 .main-nav__wrapper {
   width: 280px;
-  padding: 0 20px;
+  /*padding: 0 20px;*/
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav__wrapper {
-    width: 640px;
-    padding: 0 64px;
+    width: 690px;
     display: grid;
-    grid-template-columns: auto 1fr auto auto;
-    column-gap: 30px;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    column-gap: 10px;
     align-items: center;
   }
 
-  .main-nav__item:nth-child(2) a {
-    text-align: left;
-  }
+  /*.main-nav__item:nth-child(1) {
+    padding-left: 78px;
+  }*/
 }
 
 .main-nav__toggle {
