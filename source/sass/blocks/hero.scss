@@ -1,0 +1,25 @@
+.hero__background {
+  background-color: $bg-layer-darkgreen;
+  background-image: url("../img/background_s.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 90px;
+}
+
+.hero__image {
+  margin-bottom: 117px;
+}
+
+.hero__title {
+  font-size: 18px;
+  margin: 0;
+}
+
+.hero__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: $darkengray;
+  margin: 0 0 50px 0;
+}

@@ -3,10 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="body_page">
+<body class="page__body">
 
   <header class="main-header">
     <a class="main-header__logo-link" href="index.html">
@@ -36,7 +39,9 @@
   <main class="form-container">
     <h1 class="visually-hidden">Страница обратной связи</h1>
     <header class="form-container__hero hero">
-      <img class="hero__image" src="img/text-index-sedona.svg" alt="Надпись Sedona" width="229" height="39">
+      <div class="hero__background">
+        <img class="hero__image" src="img/text-index-sedona.svg" alt="Надпись Sedona" width="229" height="39">
+      </div>
       <h2 class="hero__title">Оставьте свой отзыв</h2>
       <p class="hero__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </header>
@@ -53,11 +58,11 @@
             </li>
             <li class="field-list__item">
               <label class="field-list__title" for="surname">Фамилия*:</label>
-              <input class="field-list__input" type="text" id="surname" name="surname" value="Пётр">
+              <input class="field-list__input" type="text" id="surname" name="surname" value="Пустота">
             </li>
             <li class="field-list__item">
               <label class="field-list__title" for="patronymic">Отчество*:</label>
-              <input class="field-list__input" type="text" id="patronymic" name="patronymic" value="Пётр">
+              <input class="field-list__input" type="text" id="patronymic" name="patronymic" value="Викторович">
             </li>
           </ul>
         </fieldset>
@@ -118,7 +123,7 @@
 
         <fieldset class="form-group">
           <legend class="form-group__title">Опишите свои эмоции:</legend>
-          <textarea class="form-group__comment" name="comment" cols="10" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="form-group__comment" name="comment" cols="25" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <div class="form__submit">
           <button class="form__button button" type="submit">Отправить отзыв</button>
@@ -131,7 +136,7 @@
 
   <footer class="main-footer">
     <p class="main-footer__tag">#visitSEDONA</p>
-    <ul class="main-footer__list social">
+    <ul class="main-footer__social-list social">
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="#" target="_blank">вконтакте</a>
       </li>
@@ -143,15 +148,19 @@
       </li>
     </ul>
     <div class="footer__copyright copyright">
-      <b class="copyright__text">Разработано</b>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <span class="copyright__text">Разработано</span>
+        <svg class="copyright__logo" aria-label="Логотип html Академии" width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+          <path fill="#2E368F"
+            d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+        </svg>
       </a>
     </div>
   </footer>
 
   <!-- МОДАЛЬНЫЕ ОКНА  -->
 
-  <div class="modal-fail modal-wrapper">
+  <div class="modal-fail modal-fail--hidden modal-wrapper">
     <h2 class="modal-fail__title">
       Что-то пошло не так!
     </h2>
@@ -161,14 +170,14 @@
     <button class="modal-fail__button button">Ок</button>
   </div>
 
-  <div class="modal-succes modal-wrapper">
-    <h2 class="modal-succes__title">
+  <div class="modal-success modal-succes--hidden modal-wrapper">
+    <h2 class="modal-success__title">
       Ваш отзыв отправлен!
     </h2>
-    <p class="modal-succes__text">
+    <p class="modal-success__text">
       Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
     </p>
-    <button class="modal-succes__button button">Закрыть окно</button>
+    <button class="modal-success__button button">Закрыть окно</button>
   </div>
 
 </body>
