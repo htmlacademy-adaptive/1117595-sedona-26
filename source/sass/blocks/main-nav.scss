@@ -1,9 +1,7 @@
 .main-nav {
   background-color: $basic-blue;
-}
 
-@media (min-width: $tablet-width) {
-  .main-nav {
+  @media (min-width: $tablet-width) {
     background-color: $basic-white;
   }
 }
@@ -17,19 +15,26 @@
 }*/
 
 .main-nav__list a {
-  display: block;
   text-decoration: none;
   color: $basic-white;
   font-weight: bold;
-}
 
-@media (min-width: $tablet-width) {
-  .main-nav__item a {
+  @media (min-width: $tablet-width) {
     color: $basic-black;
     font-size: 14px;
     line-height: 21px;
-  }
 
+    &:hover {
+      color: $basic-blue;
+    }
+
+    &:active {
+      color: rgb($basic-black, 0.3);
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
   .main-nav__item--current a {
     color: $darkgray-active;
   }
@@ -37,22 +42,29 @@
 
 .main-nav__wrapper {
   width: 280px;
-  /*padding: 0 20px;*/
   margin: 0 auto;
-}
 
-@media (min-width: $tablet-width) {
-  .main-nav__wrapper {
-    width: 690px;
+  @media (min-width: $tablet-width) {
+    width: 768px;
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-columns: repeat(5, 1fr);
     column-gap: 10px;
     align-items: center;
   }
 
-  /*.main-nav__item:nth-child(1) {
-    padding-left: 78px;
-  }*/
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__item:nth-child(4n+4) {
+    grid-column: 5 / 6;
+  }
+
+  .main-nav__item:nth-child(4n+3) {
+    grid-column: 4 / 5;
+  }
 }
 
 .main-nav__toggle {
