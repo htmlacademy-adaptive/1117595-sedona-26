@@ -8,5 +8,9 @@
     width: 768px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    .features__pic {
+      grid-column: span 2;
+    }
   }
 }
