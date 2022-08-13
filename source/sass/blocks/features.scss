@@ -2,3 +2,11 @@
 .features__sublist {
   @include list-reset;
 }
+
+.features__item {
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
