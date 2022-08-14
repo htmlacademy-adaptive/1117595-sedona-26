@@ -6,4 +6,34 @@
 .copyright__link {
   text-decoration: none;
   color: $basic-black;
+  transition: 0.4s linear;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: $basic-blue;
+    }
+
+    &:active {
+      color: $gray-active;
+    }
+  }
+}
+
+.copyright__logo path {
+  transition: 0.3s linear;
+}
+
+.copyright__logo {
+  @media (min-width: $tablet-width) {
+    &:hover path {
+      fill: $basic-blue;
+    }
+
+    &:active path {
+      fill: $gray-active;
+    }
+  }
 }

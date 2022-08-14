@@ -5,12 +5,18 @@
 
 .features__item {
   @media (min-width: $tablet-width) {
-    width: 768px;
+    min-width: 768px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: auto auto;
 
-    .features__pic {
-      grid-column: span 2;
+    .features__sublist {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column: 1 / -1;
+    }
+
+    .features__pic--order {
+      order: -1;
     }
   }
 }

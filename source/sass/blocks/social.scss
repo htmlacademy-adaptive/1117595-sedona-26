@@ -1,7 +1,72 @@
-.social__item {
+.social__link {
+  display: block;
   background-color: $basic-blue;
+  width: 48px;
+  height: 48px;
+  position: relative;
+  text-decoration: none;
+  transition: 0.4s linear;
+
+  &:hover {
+    background-color: $darkblue;
+  }
+
+  &:active {
+    background-color: $darkenblue;
+  }
 }
 
-.social__link {
-  text-decoration: none;
+.social__link--vkontakte::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icons/vk-icon.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  transition: 0.4s linear;
+}
+
+.social__link--telegram::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icons/telegram-icon.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  transition: 0.4s linear;
+}
+
+.social__link--youtube::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icons/youtube-icon.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  transition: 0.4s linear;
+}
+
+.social__link--vkontakte:active::before,
+.social__link--telegram:active::before,
+.social__link--youtube:active::before {
+  opacity: 0.3;
+  transform: rotate(360deg);
 }

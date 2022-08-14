@@ -1,7 +1,3 @@
-.gallery__picture {
-  margin: 0;
-}
-
 .picture__description-title {
   font-size: 14px;
   line-height: 21px;
@@ -15,4 +11,23 @@
   text-transform: none;
   color: $darkengray;
   margin: 0;
+}
+
+.picture__link {
+  display: block;
+}
+
+.picture__info {
+  @media (min-width: $tablet-width) {
+    background-color: $lightengray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.picture__info--bg-dark {
+  @media (min-width: $tablet-width) {
+    background-color: $darkgray-bg;
+  }
 }
