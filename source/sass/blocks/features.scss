@@ -2,3 +2,21 @@
 .features__sublist {
   @include list-reset;
 }
+
+.features__item {
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    display: grid;
+    grid-template-columns: auto auto;
+
+    .features__sublist {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column: 1 / -1;
+    }
+
+    .features__pic--order {
+      order: -1;
+    }
+  }
+}
