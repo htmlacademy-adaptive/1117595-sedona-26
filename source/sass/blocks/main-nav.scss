@@ -10,9 +10,18 @@
   @include list-reset;
 }
 
-/*.main-nav__item {
-  padding: 13px 10px;
-}*/
+@media (max-width: $mobile-width-only) {
+  .main-nav__item {
+    padding-top: 17px;
+    padding-bottom: 13px;
+  }
+
+  .main-nav__item:not(:last-child) {
+    box-shadow: 0 1px 0 0 rgb($dark-shadow, 0.2),
+      0 1px 0 0 rgb($dark-shadow, 0.2),
+      0 1px 0 0 rgb($basic-white, 0.2) inset;
+  }
+}
 
 .main-nav__list a {
   text-decoration: none;
