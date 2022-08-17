@@ -10,16 +10,35 @@
   @include list-reset;
 }
 
-@media (max-width: $mobile-width-only) {
-  .main-nav__item {
-    padding-top: 17px;
-    padding-bottom: 13px;
-  }
+.main-nav__item {
+  @media (max-width: $mobile-width-only) {
+    padding: 17px 20px 13px;
 
-  .main-nav__item:not(:last-child) {
-    box-shadow: 0 1px 0 0 rgb($dark-shadow, 0.2),
-      0 1px 0 0 rgb($dark-shadow, 0.2),
-      0 1px 0 0 rgb($basic-white, 0.2) inset;
+    &--shadow {
+      box-shadow: 0 1px 0 0 rgb($dark-shadow, 0.2);
+    }
+
+    &--shadow-mix {
+      box-shadow:
+        0 1px 0 0 rgb($dark-shadow, 0.2),
+        0 2px 0 0 rgb($basic-white, 0.2) inset;
+    }
+
+    &--shadow-inset {
+      position: relative;
+      box-shadow: 0 2px 0 0 rgb($basic-white, 0.2) inset;
+    }
+
+    &--shadow-inset::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 7px;
+      bottom: 0;
+      background: linear-gradient(180deg, rgb($basic-black, 0) 0%, rgb($basic-black, 0.2) 100%);
+      z-index: 3;
+    }
   }
 }
 

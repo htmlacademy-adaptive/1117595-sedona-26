@@ -7,15 +7,23 @@
   @media (min-width: $tablet-width) {
     min-width: 768px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
-    .features__sublist {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column: 1 / -1;
-    }
+.features__sublist {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1 / -1;
+  }
+}
 
-    .features__pic--order {
+.features__pic {
+  @media (min-width: $tablet-width) {
+    grid-column: span 2;
+
+    &--order {
       order: -1;
     }
   }
