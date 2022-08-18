@@ -2,13 +2,19 @@
   margin: 0;
 }
 
+.social__item {
+  display: block;
+}
+
 .main-footer__social-list {
   @include list-reset;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 48px);
+  gap: 6px;
+  justify-content: center;
+  //padding
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 48px);
-    gap: 6px;
     max-width: 350px;
   }
 }
