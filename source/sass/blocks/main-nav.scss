@@ -13,29 +13,27 @@
 .main-nav__item {
   @media (max-width: $mobile-width-only) {
     padding: 17px 20px 13px;
+    box-shadow:
+      0 1px 0 0 rgb($dark-shadow, 0.2),
+      0 2px 0 0 rgb($basic-white, 0.2) inset;
 
-    &--shadow {
+    &:first-child {
       box-shadow: 0 1px 0 0 rgb($dark-shadow, 0.2);
     }
 
-    &--shadow-mix {
-      box-shadow:
-        0 1px 0 0 rgb($dark-shadow, 0.2),
-        0 2px 0 0 rgb($basic-white, 0.2) inset;
-    }
-
-    &--shadow-inset {
-      position: relative;
+    &:last-child {
       box-shadow: 0 2px 0 0 rgb($basic-white, 0.2) inset;
+      position: relative;
     }
 
-    &--shadow-inset::after {
+    &:last-child::after {
       content: "";
       position: absolute;
       display: block;
       width: 100%;
       height: 7px;
       bottom: 0;
+      left: 0;
       background: linear-gradient(180deg, rgb($basic-black, 0) 0%, rgb($basic-black, 0.2) 100%);
       z-index: 3;
     }
