@@ -4,3 +4,15 @@
   color: rgb($basic-black, 0.6);
   text-align: right;
 }
+
+.form__submit {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.form__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

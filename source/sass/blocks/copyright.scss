@@ -7,18 +7,15 @@
   text-decoration: none;
   color: $basic-black;
   transition: 0.4s linear;
+  display: flex;
+  align-items: center;
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: center;
+  &:hover {
+    color: $basic-blue;
+  }
 
-    &:hover {
-      color: $basic-blue;
-    }
-
-    &:active {
-      color: $gray-active;
-    }
+  &:active {
+    color: $gray-active;
   }
 }
 
@@ -27,13 +24,11 @@
 }
 
 .copyright__logo {
-  @media (min-width: $tablet-width) {
-    &:hover path {
-      fill: $basic-blue;
-    }
+  &:hover path {
+    fill: $basic-blue;
+  }
 
-    &:active path {
-      fill: $gray-active;
-    }
+  &:active path {
+    fill: $gray-active;
   }
 }

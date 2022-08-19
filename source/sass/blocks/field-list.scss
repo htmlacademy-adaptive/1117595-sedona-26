@@ -1,11 +1,15 @@
 .field-list__item {
-  margin-bottom: 15px;
+  margin: 0 auto 15px;
+  width: 280px;
 }
 
 .field-list__title {
   color: $darkengray;
+  display: block;
   font-size: 14px;
   line-height: 21px;
+  text-align: left;
+  padding-left: 16px;
 }
 
 .field-list__input {
@@ -16,6 +20,8 @@
   line-height: 26px;
   font-weight: bold;
   padding: 16px 0 16px 16px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .field-list__input::placeholder {
