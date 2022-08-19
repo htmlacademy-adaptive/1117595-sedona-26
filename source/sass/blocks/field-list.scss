@@ -33,3 +33,19 @@
   text-transform: none;
   font-weight: bold;
 }
+
+.field-list__radio {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    .field-list__item {
+      margin: 0 0 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      justify-content: center;
+    }
+  }
+}

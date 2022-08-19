@@ -12,7 +12,14 @@
 
 .form__wrapper {
   @media (min-width: $tablet-width) {
+    min-width: 648px;
+    padding-left: 60px;
+    padding-right: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    .form-group:nth-child(1n+3) {
+      grid-column: span 2;
+    }
   }
 }
