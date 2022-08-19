@@ -8,6 +8,13 @@
 .form__submit {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    grid-column: span 2;
+    width: 648px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form__wrapper {
@@ -21,5 +28,15 @@
     .form-group:nth-child(1n+3) {
       grid-column: span 2;
     }
+  }
+}
+
+.form__button {
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 384px;
   }
 }

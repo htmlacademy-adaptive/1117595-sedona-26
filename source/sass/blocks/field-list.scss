@@ -49,3 +49,16 @@
     }
   }
 }
+
+.field-list__checkbox {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .field-list__item {
+      width: 224px;
+      margin: 0 0 15px;
+    }
+  }
+}
