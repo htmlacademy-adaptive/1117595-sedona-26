@@ -1,6 +1,10 @@
 .field-list__item {
   margin: 0 auto 15px;
   width: 280px;
+
+  @media (min-width: $desktop-width) {
+    width: 430px;
+  }
 }
 
 .field-list__title {
@@ -46,6 +50,10 @@
 
     @media (min-width: $desktop-width) {
       justify-content: center;
+
+      .field-list__item {
+        width: 280px;
+      }
     }
   }
 }
@@ -61,4 +69,37 @@
       margin: 0 0 15px;
     }
   }
+}
+
+.field-list__rating {
+  position: relative;
+  cursor: pointer;
+}
+
+.field-list__rating::before {
+  content: "";
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: $lightengray;
+  left: -62px;
+  top: -10px;
+  border-radius: 50%;
+}
+
+.field-list__rating::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: $darkengray;
+  left: -47px;
+  top: 5px;
+  border-radius: 50%;
+  transform: scale(0.3);
+  transition: 1s ease-in;
+}
+
+.field-list__radio:checked .field-list__rating::after {
+  transform: scale(1);
 }
