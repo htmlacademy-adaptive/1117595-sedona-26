@@ -49,7 +49,7 @@
 
     <section class="review-form">
       <h2 class="visually-hidden">Форма отзыва</h2>
-      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+      <form class="form form__wrapper" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="form-group">
           <legend class="form-group__title">Представьтесь:</legend>
           <ul class="form-group__list field-list">
@@ -84,17 +84,17 @@
 
         <fieldset class="form-group">
           <legend class="form-group__title">Ваше общее впечатление:</legend>
-          <ul class="form-group__list field-list">
+          <ul class="form-group__list field-list field-list__radio">
             <li class="field-list__item">
-              <input class="field-list__radio field-list__rating-checked visually-hidden" type="radio" id="effect-one" name="effect-one" checked>
+              <input class="field-list__radio field-list__rating-checked visually-hidden" type="radio" id="effect-one" name="effect" checked>
               <label class="field-list__rating" for="effect-one">Скорее положительное</label>
             </li>
             <li class="field-list__item">
-              <input class="field-list__radio visually-hidden" type="radio" id="effect-two" name="effect-two">
+              <input class="field-list__radio visually-hidden" type="radio" id="effect-two" name="effect">
               <label class="field-list__rating" for="effect-two">Скорее отрицательное</label>
             </li>
             <li class="field-list__item">
-              <input class="field-list__radio visually-hidden" type="radio" id="effect-three" name="effect-three">
+              <input class="field-list__radio visually-hidden" type="radio" id="effect-three" name="effect">
               <label class="field-list__rating" for="effect-three">Затрудняюсь ответить</label>
             </li>
           </ul>
@@ -102,7 +102,7 @@
 
         <fieldset class="form-group">
           <legend class="form-group__title">Посещенные достопримечательности:</legend>
-          <ul class="form-group__list field-list">
+          <ul class="form-group__list field-list field-list__checkbox">
             <li class="field-list__item">
               <input class="field-list__check field-list__check-checked visually-hidden" type="checkbox" id="bridge" name="bridge" checked>
               <label class="field-list__place" for="bridge">Мост Дьявола</label>
