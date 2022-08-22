@@ -1,14 +1,19 @@
 .likes {
+  padding-right: 20px;
   display: flex;
   align-items: center;
 }
 
-/*.likes__count {
+.likes__count {
   display: block;
+  padding-right: 9px;
+  width: 23px;
+  height: 21px;
   background-image: url("../img/icons/like-icon.svg");
   background-repeat: no-repeat;
+  background-position: 0 0;
 }
-*/
+
 
 .likes__sum {
   font-size: 14px;

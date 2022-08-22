@@ -1,14 +1,20 @@
 .gallery__list {
   @include list-reset;
+  text-align: left;
+  min-width: 280px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    min-width: 768px;
+    min-width: 648px;
+    padding: 0 60px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 1200px;
+    padding-left: 0;
+    padding-right: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
