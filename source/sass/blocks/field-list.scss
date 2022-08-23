@@ -28,6 +28,16 @@
   padding: 16px 0 16px 16px;
   width: 100%;
   box-sizing: border-box;
+
+  &:hover {
+    background-color: $lightgray-input;
+  }
+
+  &:focus,
+  &:active {
+    background-color: transparent;
+    outline: 4px solid $lightgray-input;
+  }
 }
 
 .field-list__input::placeholder {

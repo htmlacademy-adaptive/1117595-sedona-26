@@ -39,6 +39,8 @@
 }
 
 .form__button {
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     width: 324px;
   }
