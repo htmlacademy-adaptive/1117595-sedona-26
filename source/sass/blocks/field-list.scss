@@ -73,6 +73,18 @@
   position: relative;
   cursor: pointer;
   padding-left: 60px;
+
+  &:hover::before {
+    background-color: $lightgray-input;
+  }
+
+  &:active::before {
+    background-color: $gray-control;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
 .field-list__rating::before {
@@ -112,6 +124,18 @@
   position: relative;
   cursor: pointer;
   padding-left: 60px;
+
+  &:hover::before {
+    background-color: $lightgray-input;
+  }
+
+  &:active::before {
+    background-color: $gray-control;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
 .field-list__place::before {
