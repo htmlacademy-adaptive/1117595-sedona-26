@@ -48,7 +48,7 @@
     <section class="gallery">
       <h2 class="visually-hidden">Галлерея</h2>
       <ul class="gallery__list">
-        <li class="gallery__item gallery__item--main">
+        <li class="gallery__item gallery__item-main">
           <figure class="gallery__picture picture">
             <a class="picture__link" href="#">
               <img class="picture__link-photo" src="img/open-spaces_s.jpg" alt="фото - дорога в закат" width="280" height="280">
@@ -138,11 +138,13 @@
       <p class="presentation__text">
         Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
       </p>
-      <video class="presentation__preview" poster="img/preview-video_s.jpg" width="280">
+      <div class="presentation__video-wrapper">
+        <video class="presentation__preview" poster="img/preview-video_s.jpg" width="280">
         <!-- #shadow-root (user-agent)
-        "Your browser doesn't support HTML5 video tag."
-      </video> -->
-      <button class="presentation__preview-buton"><span class="visually-hidden">вкл и выкл видео</span></button>
+        "Your browser doesn't support HTML5 video tag." -->
+        </video>
+        <button class="presentation__preview-buton"><span class="visually-hidden">вкл и выкл видео</span></button>
+        </div>
     </section>
   </main>
 

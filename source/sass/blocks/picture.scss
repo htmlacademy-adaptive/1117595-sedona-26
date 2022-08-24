@@ -23,11 +23,15 @@
 }
 
 .picture__info {
+  padding-top: 15px;
+  padding-bottom: 25px;
+
   @media (min-width: $tablet-width) {
     background-color: $lightengray;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 22px 20px 15px;
   }
 }
 

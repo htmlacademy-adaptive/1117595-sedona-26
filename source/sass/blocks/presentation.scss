@@ -11,7 +11,7 @@
   padding: 0 25px;
 }
 
-.presentation {
+.presentation__video-wrapper {
   position: relative;
 }
 
@@ -24,9 +24,7 @@
   height: 54px;
   background-image: url("../img/icons/video-button.png");
   background-repeat: no-repeat;
-  left: 0;
-  right: 0;
-  top: 63%;
-  margin-left: auto;
-  margin-right: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
