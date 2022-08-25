@@ -28,8 +28,11 @@
 
 .gallery__item {
   @media (max-width: $mobile-width-only) {
-    margin-bottom: 35px;
     position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
 
     &::before {
       content: "";
@@ -48,12 +51,12 @@
       width: 320px;
       background-color: $lightgray-input;
       left: -20px;
-      bottom: -20px;
+      bottom: 0;
     }
   }
 }
 
-.gallery__item-main {
+.gallery__item--main {
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
   }

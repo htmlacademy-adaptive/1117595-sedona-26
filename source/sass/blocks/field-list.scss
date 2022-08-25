@@ -1,5 +1,5 @@
 .field-list__item {
-  margin: 0 auto 16px;
+  margin-bottom: 16px;
   width: 280px;
   min-height: 46px;
   text-align: left;
@@ -65,19 +65,19 @@
   font-weight: bold;
 }
 
-.field-list__radio {
+.field-list__radio-group {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-
-    .field-list__item {
-      width: 280px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     justify-content: center;
+
+    .field-list__item {
+      width: 280px;
+    }
   }
 }
 
