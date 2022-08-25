@@ -8,6 +8,10 @@
   font-weight: bold;
   padding: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .form-group__list {
