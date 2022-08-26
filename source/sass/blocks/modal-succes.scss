@@ -1,17 +1,25 @@
 .modal-success {
   background-color: $basic-white;
-}
+  min-width: 320px;
 
-.modal-success__title {
-  font-size: 18px;
-}
-
-.modal-success__text {
-  font-size: 14px;
-  line-height: 21px;
-  margin-bottom: 35px;
+  @media (min-width: $tablet-width) {
+    min-width: 640px;
+  }
 }
 
 .modal-success__button {
-  outline: 20px solid $lightengray;
+  min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 458px;
+  }
+}
+
+.modal-success__background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 98px;
+  background-color: $lightengray;
 }

@@ -1,16 +1,68 @@
 .form-group {
   border: none;
-  margin: 0 0 60px 0;
   padding: 0;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 24px;
+  }
 }
 
 .form-group__title {
+  display: block;
   font-weight: bold;
-  padding: 0;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 28px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 320px;
+      background-color: $lightgray-input;
+      left: 50%;
+      transform: translate(-50%);
+      top: -24px;
+    }
+  }
+}
+
+.form-group__title--line {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 100%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 123px;
+      height: 1px;
+      background-color: $gray-form-decor;
+      left: 0;
+      top: 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 123px;
+      height: 1px;
+      background-color: $gray-form-decor;
+      right: 0;
+      top: 50%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before,
+    &::after {
+      width: 280px;
+    }
   }
 }
 

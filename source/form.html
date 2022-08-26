@@ -82,7 +82,7 @@
         </fieldset>
 
         <fieldset class="form-group">
-          <legend class="form-group__title">Ваше общее впечатление:</legend>
+          <legend class="form-group__title form-group__title--line">Ваше общее впечатление:</legend>
           <ul class="form-group__list field-list field-list__radio-group">
             <li class="field-list__item">
               <input class="field-list__radio field-list__rating-checked visually-hidden" type="radio" id="effect-one" name="effect" checked>
@@ -100,7 +100,7 @@
         </fieldset>
 
         <fieldset class="form-group">
-          <legend class="form-group__title">Посещенные достопримечательности:</legend>
+          <legend class="form-group__title form-group__title--line">Посещенные<br>достопримечательности:</legend>
           <ul class="form-group__list field-list field-list__checkbox">
             <li class="field-list__item">
               <input class="field-list__check field-list__check-checked visually-hidden" type="checkbox" id="bridge" name="bridge" checked>
@@ -122,7 +122,7 @@
         </fieldset>
 
         <fieldset class="form-group">
-          <legend class="form-group__title">Опишите свои эмоции:</legend>
+          <legend class="form-group__title form-group__title--line">Опишите свои эмоции:</legend>
           <textarea class="form-group__comment" name="comment" cols="25" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <div class="form__submit">
@@ -165,25 +165,30 @@
   </footer>
 
   <!-- МОДАЛЬНЫЕ ОКНА  -->
-
-  <div class="modal-fail modal-fail--hidden modal-wrapper">
-    <h2 class="modal-fail__title">
-      Что-то пошло не так!
-    </h2>
-    <p class="modal-fail__text">
-      Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-    </p>
-    <button class="modal-fail__button button">Ок</button>
+  <div class="modal modal--hidden-fail">
+    <div class="modal-fail">
+      <h2 class="modal__title">
+        Что-то пошло не так!
+      </h2>
+      <p class="modal__text">
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+      <button class="modal-fail__button button">Ок</button>
+    </div>
   </div>
 
-  <div class="modal-success modal-succes--hidden modal-wrapper">
-    <h2 class="modal-success__title">
-      Ваш отзыв отправлен!
-    </h2>
-    <p class="modal-success__text">
-      Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
-    </p>
-    <button class="modal-success__button button">Закрыть окно</button>
+  <div class="modal modal--hidden-success">
+    <div class="modal-success">
+      <h2 class="modal__title">
+        Ваш отзыв отправлен!
+      </h2>
+      <p class="modal__text">
+        Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+      </p>
+      <div class="modal-success__background">
+        <button class="modal-success__button button">Закрыть окно</button>
+      </div>
+    </div>
   </div>
 
 </body>
