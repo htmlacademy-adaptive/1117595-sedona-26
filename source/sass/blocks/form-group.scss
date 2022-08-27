@@ -5,6 +5,12 @@
   @media (max-width: $mobile-width-only) {
     margin-bottom: 24px;
   }
+
+  &:nth-child(2) {
+    @media (min-width: $tablet-width) {
+      justify-self: flex-end;
+    }
+  }
 }
 
 .form-group__title {

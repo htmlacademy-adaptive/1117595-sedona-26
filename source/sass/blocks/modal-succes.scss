@@ -1,9 +1,9 @@
 .modal-success {
   background-color: $basic-white;
-  min-width: 320px;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
-    min-width: 640px;
+    width: 640px;
   }
 }
 
@@ -15,11 +15,23 @@
   }
 }
 
-.modal-success__background {
+.modal-success__bottom {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   min-height: 98px;
   background-color: $lightengray;
+}
+
+.modal-success__top {
+  padding-top: 45px;
+  padding-right: 42px;
+  padding-left: 41px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 53px;
+    padding-right: 110px;
+    padding-left: 109px;
+  }
 }

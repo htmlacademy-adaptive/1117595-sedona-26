@@ -1,10 +1,12 @@
 .modal__title {
+  margin-top: 0;
   font-size: 18px;
 }
 
 .modal__text {
   font-size: 14px;
   line-height: 21px;
+  margin-top: 0;
   margin-bottom: 35px;
 }
 
@@ -27,4 +29,10 @@
 
 .modal--hidden-fail {
   display: none;
+}
+
+.modal__title--fail {
+  @media (min-width: $tablet-width) {
+    padding: 0 90px;
+  }
 }

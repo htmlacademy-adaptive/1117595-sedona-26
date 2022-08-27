@@ -1,9 +1,11 @@
 .modal-fail {
   background-color: $basic-white;
-  min-width: 320px;
+  width: 320px;
+  padding: 45px 42px 35px 41px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    min-width: 400px;
+    width: 400px;
   }
 }
 
