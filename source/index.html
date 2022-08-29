@@ -13,10 +13,10 @@
 
   <header class="main-header">
     <img class="main-header__logo" src="img/logo-sedona.png" alt="логотип седона" width="185" height="96">
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <button class="main-header__nav-toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <nav class="main-nav main-nav--close">
       <ul class="main-nav__list main-nav__wrapper">
         <li class="main-nav__item main-nav__item--current">
           <a href="#">Главная</a>
@@ -105,7 +105,7 @@
       <h2 class="visually-hidden">Поиск жилья</h2>
       <div class="search__wrapper">
         <p class="search__text"><b>Заинтересовались?</b></p>
-        <p class="search__text-date">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <p class="search__text-date">Укажите предполагаемые даты поездки,<br class="line-break">и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a class="search__button button" href="#" target="_blank">Найти Гостиницу</a>
       </div>
       <img class="search__map" src="img/map_s.png" alt="карта местности" width="320" height="350">
@@ -141,6 +141,8 @@
       </a>
     </div>
   </footer>
+
+<script src="js/script.js"></script>
 </body>
 
 </html>

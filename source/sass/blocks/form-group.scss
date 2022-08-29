@@ -3,12 +3,26 @@
   padding: 0;
 
   @media (max-width: $mobile-width-only) {
-    margin-bottom: 24px;
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+
+    &:nth-child(4) {
+      margin-bottom: 42px;
+    }
   }
 
   &:nth-child(2) {
     @media (min-width: $tablet-width) {
       justify-self: flex-end;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:last-child {
+      margin-bottom: 48px;
     }
   }
 }
@@ -20,6 +34,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 28px;
+    font-size: 21px;
   }
 
   @media (max-width: $mobile-width-only) {

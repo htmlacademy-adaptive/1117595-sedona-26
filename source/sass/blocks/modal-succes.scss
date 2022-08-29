@@ -22,6 +22,10 @@
   width: 100%;
   min-height: 98px;
   background-color: $lightengray;
+
+  @media (min-width: $tablet-width) {
+    min-height: 146px;
+  }
 }
 
 .modal-success__top {

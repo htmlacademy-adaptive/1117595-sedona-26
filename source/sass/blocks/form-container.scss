@@ -1,0 +1,19 @@
+.form-container__hero {
+  margin-bottom: 53px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 102px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
+}
+
+.form-container {
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+  }
+}

@@ -55,3 +55,9 @@
     }
   }
 }
+
+.picture__description {
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 11px;
+  }
+}

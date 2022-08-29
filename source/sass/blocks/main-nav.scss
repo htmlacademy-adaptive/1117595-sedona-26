@@ -4,6 +4,23 @@
   @media (min-width: $tablet-width) {
     background-color: $basic-white;
   }
+
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+
+    &--close {
+      display: none;
+    }
+
+    &--open {
+      display: block;
+    }
+  }
 }
 
 .main-nav__list {
@@ -37,6 +54,11 @@
       background: linear-gradient(180deg, rgb($basic-black, 0) 0%, rgb($basic-black, 0.2) 100%);
       z-index: 3;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 14px;
   }
 }
 
@@ -90,10 +112,4 @@
   .main-nav__item:nth-child(4n+3) {
     grid-column: 4 / 5;
   }
-}
-
-.main-nav__toggle {
-  display: block;
-  width: 30px;
-  position: absolute;
 }

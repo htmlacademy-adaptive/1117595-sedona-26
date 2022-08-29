@@ -2,3 +2,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.line-break {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

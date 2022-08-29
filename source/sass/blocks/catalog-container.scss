@@ -1,0 +1,23 @@
+.catalog-container__hero {
+  margin-bottom: 24px;
+  padding-bottom: 45px;
+
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 320px;
+      background-color: $lightgray-input;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: 0;
+    }
+  }
+
+  .hero__title {
+    margin-bottom: 30px;
+  }
+}

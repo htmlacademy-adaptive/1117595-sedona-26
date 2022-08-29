@@ -1,7 +1,10 @@
 .field-list__item {
-  margin-bottom: 16px;
   width: 280px;
   text-align: left;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 430px;

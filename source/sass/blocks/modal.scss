@@ -1,6 +1,10 @@
 .modal__title {
   margin-top: 0;
   font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .modal__text {
@@ -33,6 +37,6 @@
 
 .modal__title--fail {
   @media (min-width: $tablet-width) {
-    padding: 0 90px;
+    line-height: 40px;
   }
 }

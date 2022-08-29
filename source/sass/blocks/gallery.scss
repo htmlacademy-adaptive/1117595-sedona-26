@@ -31,20 +31,10 @@
     position: relative;
 
     &:not(:last-child) {
-      margin-bottom: 35px;
+      margin-bottom: 24px;
     }
 
     &::before {
-      content: "";
-      position: absolute;
-      height: 1px;
-      width: 320px;
-      background-color: $lightgray-input;
-      left: -20px;
-      top: -24px;
-    }
-
-    &:last-child::after {
       content: "";
       position: absolute;
       height: 1px;
