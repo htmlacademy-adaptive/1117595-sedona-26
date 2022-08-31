@@ -42,7 +42,6 @@
 
 .main-nav__item {
   @media (max-width: $mobile-width-only) {
-    padding: 17px 20px 13px;
     box-shadow:
       0 1px 0 0 rgb($dark-shadow, 0.2),
       0 2px 0 0 rgb($basic-white, 0.2) inset;
@@ -89,6 +88,8 @@
 }
 
 .main-nav__list a {
+  display: block;
+  padding: 17px 20px 12px;
   text-decoration: none;
   color: $basic-white;
   font-weight: bold;

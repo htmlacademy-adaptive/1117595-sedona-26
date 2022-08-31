@@ -53,6 +53,8 @@
 
 .form__button {
   cursor: pointer;
+  box-sizing: border-box;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     width: 324px;
