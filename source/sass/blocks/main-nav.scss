@@ -67,6 +67,19 @@
       background: linear-gradient(180deg, rgb($basic-black, 0) 0%, rgb($basic-black, 0.2) 100%);
       z-index: 3;
     }
+
+
+    &:hover {
+      background-color: $darkblue;
+    }
+
+    &:active {
+      background-color: $darkenblue;
+    }
+
+    &:active a {
+      color: rgb($basic-white, 0.3);
+    }
   }
 
   @media (min-width: $tablet-width) {

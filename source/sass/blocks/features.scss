@@ -1,3 +1,11 @@
+.features {
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 61px;
+  }
+}
+
 .features__list,
 .features__sublist {
   @include list-reset;

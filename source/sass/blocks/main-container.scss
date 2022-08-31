@@ -1,4 +1,10 @@
 .main-container__hero {
+  margin-bottom: 55px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+  }
+
   .hero__background {
     min-height: 389px;
     background-color: $bg-layer-darkgreen;

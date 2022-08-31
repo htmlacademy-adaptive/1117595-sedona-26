@@ -1,6 +1,11 @@
 .search__text {
   font-size: 21px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .search__text-date {
@@ -8,4 +13,51 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+  }
+}
+
+.search__button {
+  max-width: 458px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
+
+  &:hover {
+    background-color: $darkblue;
+  }
+
+  &:active {
+    background-color: $darkenblue;
+    color: rgb($basic-white, 0.3);
+  }
+
+  &:disabled {
+    background-color: $lightgray-input;
+  }
+}
+
+.search iframe {
+  border: none;
+  display: block;
+  max-width: 1200px;
+  width: 100%;
+  height: 350px;
+  margin: 0 auto;
 }

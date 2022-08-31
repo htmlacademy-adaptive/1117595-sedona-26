@@ -1,6 +1,11 @@
 .sublist__title {
   font-size: 18px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .sublist__description {
@@ -9,4 +14,75 @@
   font-weight: 400;
   color: $darkengray;
   margin: 0;
+}
+
+.sublist__item {
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 6px;
+
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
+
+    &--home {
+      padding-left: 47px;
+    }
+
+    &--home::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 40px;
+      height: 40px;
+      background-image: url("../img/icons/icon-house.svg");
+      background-repeat: no-repeat;
+      background-position: left top;
+    }
+
+    &--food {
+      padding-left: 52px;
+    }
+
+    &--food::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 40px;
+      height: 40px;
+      background-image: url("../img/icons/icon-food.svg");
+      background-repeat: no-repeat;
+      background-position: left top;
+    }
+
+    &--gift {
+      padding-left: 44px;
+    }
+
+    &--gift::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 40px;
+      height: 40px;
+      background-image: url("../img/icons/icon-gift.svg");
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+  }
+}
+
+.sublist {
+  margin-bottom: 52px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 31px;
+    padding-left: 18px;
+    padding-right: 18px;
+    text-align: left;
+  }
 }

@@ -1,16 +1,34 @@
 .info {
   background-color: $basic-blue;
   color: $basic-white;
+  padding: 40px 16px 40px 22px;
+
+  @media (max-width: $mobile-width-only) {
+    &--decor {
+      padding-top: 55px;
+      background-image: url("../img/city-decor.svg");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 100% 37px;
+    }
+  }
 }
 
 .info__title {
   font-size: 18px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .info__number {
+  display: block;
   font-size: 14px;
   line-height: 21px;
+  margin-bottom: 17px;
 }
 
 .info__legend {
