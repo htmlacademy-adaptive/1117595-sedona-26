@@ -1,5 +1,9 @@
 .main-container__hero {
-  margin-bottom: 55px;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 44px;

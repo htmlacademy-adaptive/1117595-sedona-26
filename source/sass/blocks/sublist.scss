@@ -5,6 +5,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    margin-bottom: 30px;
   }
 }
 
@@ -78,11 +79,24 @@
 
 .sublist {
   margin-bottom: 52px;
+  padding-top: 31px;
+  padding-left: 18px;
+  padding-right: 18px;
 
   @media (max-width: $mobile-width-only) {
-    padding-top: 31px;
-    padding-left: 18px;
-    padding-right: 18px;
     text-align: left;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 158px;
+    padding-left: 36px;
+    padding-right: 31px;
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+    padding-left: 58px;
+    padding-right: 78px;
   }
 }
