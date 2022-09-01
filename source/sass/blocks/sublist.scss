@@ -15,6 +15,16 @@
   font-weight: 400;
   color: $darkengray;
   margin: 0;
+
+  /*@media (min-width: $tablet-width) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }*/
 }
 
 .sublist__item {
