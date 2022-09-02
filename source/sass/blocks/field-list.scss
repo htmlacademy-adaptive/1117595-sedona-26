@@ -78,17 +78,24 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    justify-items: end;
     grid-gap: 16px;
 
     .field-list__item {
       margin-bottom: 0;
+    }
+
+    .field-list__item:nth-child(2) {
+      justify-self: start;
     }
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 28px;
+    justify-items: start;
+    padding-left: 53px;
+    padding-right: 53px;
 
     .field-list__item {
       width: 280px;

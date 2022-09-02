@@ -49,6 +49,12 @@
       transform: translate(-50%);
     }
   }
+
+  /*@media (min-width: $desktop-width) {
+    min-width: 960px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }*/
 }
 
 .form__button {

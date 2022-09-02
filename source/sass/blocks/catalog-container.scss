@@ -1,6 +1,6 @@
 .catalog-container__hero {
   margin-bottom: 24px;
-  padding-bottom: 45px;
+  padding-bottom: 35px;
 
   @media (max-width: $mobile-width-only) {
     position: relative;
@@ -19,5 +19,15 @@
 
   .hero__title {
     margin-bottom: 30px;
+  }
+
+  .hero__background {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 66px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 100px;
+    }
   }
 }

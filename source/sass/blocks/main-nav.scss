@@ -80,11 +80,6 @@
       color: rgb($basic-white, 0.3);
     }
   }
-
-  @media (min-width: $tablet-width) {
-    padding-top: 15px;
-    padding-bottom: 14px;
-  }
 }
 
 .main-nav__list a {
@@ -99,6 +94,8 @@
     color: $basic-black;
     font-size: 14px;
     line-height: 21px;
+    padding-top: 18px;
+    padding-bottom: 17px;
 
     &:hover {
       color: $basic-blue;
