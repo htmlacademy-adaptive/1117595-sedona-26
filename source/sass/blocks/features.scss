@@ -24,10 +24,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: 1 / -1;
+    grid-column-gap: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column-gap: 110px;
   }
 }
 
 .features__pic {
+  display: block;
+
   @media (min-width: $tablet-width) {
     grid-column: span 2;
 

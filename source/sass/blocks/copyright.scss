@@ -17,13 +17,7 @@
   &:active {
     color: $gray-active;
   }
-}
 
-.copyright__logo path {
-  transition: 0.3s linear;
-}
-
-.copyright__logo {
   &:hover path {
     fill: $basic-blue;
   }
@@ -31,4 +25,8 @@
   &:active path {
     fill: $gray-active;
   }
+}
+
+.copyright__logo path {
+  transition: 0.3s linear;
 }

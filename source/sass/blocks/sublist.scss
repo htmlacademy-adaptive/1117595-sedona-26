@@ -15,16 +15,6 @@
   font-weight: 400;
   color: $darkengray;
   margin: 0;
-
-  /*@media (min-width: $tablet-width) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 40px;
-    padding-right: 40px;
-  }*/
 }
 
 .sublist__item {
@@ -41,48 +31,80 @@
       padding-left: 47px;
     }
 
-    &--home::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 40px;
-      height: 40px;
-      background-image: url("../img/icons/icon-house.svg");
-      background-repeat: no-repeat;
-      background-position: left top;
-    }
-
     &--food {
       padding-left: 52px;
-    }
-
-    &--food::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 40px;
-      height: 40px;
-      background-image: url("../img/icons/icon-food.svg");
-      background-repeat: no-repeat;
-      background-position: left top;
     }
 
     &--gift {
       padding-left: 44px;
     }
+  }
 
-    &--gift::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 40px;
-      height: 40px;
-      background-image: url("../img/icons/icon-gift.svg");
-      background-repeat: no-repeat;
-      background-position: center top;
+  &--home::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/icons/icon-house.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    @media (min-width: $tablet-width) {
+      width: 72px;
+      height: 75px;
+      left: 50%;
+      top: -90px;
+      transform: translate(-50%);
+      background-position: top;
+      background-size: cover;
+    }
+  }
+
+
+  &--food::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/icons/icon-food.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    @media (min-width: $tablet-width) {
+      width: 77px;
+      height: 68px;
+      left: 50%;
+      top: -80px;
+      transform: translate(-50%);
+      background-position: top;
+      background-size: cover;
+    }
+  }
+
+
+  &--gift::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/icons/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    @media (min-width: $tablet-width) {
+      width: 65px;
+      height: 76px;
+      left: 50%;
+      top: -85px;
+      transform: translate(-50%);
+      background-position: top;
+      background-size: cover;
     }
   }
 }

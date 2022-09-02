@@ -15,3 +15,38 @@
   margin: 0;
   padding: 0 20px;
 }
+
+.hero__background {
+  min-height: 158px;
+  background-color: $bg-layer-darkgreen;
+  background-image: url("../img/background-decor_s.svg"),
+    url("../img/background_s-ca.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 36px;
+
+  .hero__image {
+    padding-top: 52px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 290px;
+    background-image: url("../img/background-decor_m.svg"),
+      url("../img/background_m-ca.png");
+    background-repeat: no-repeat;
+    background-position: bottom, top;
+    background-size: 1200px, cover;
+    margin-bottom: 64px;
+
+    .hero__image {
+      width: 457px;
+      height: 78px;
+      padding-top: 95px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 518px;
+  }
+}

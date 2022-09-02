@@ -1,5 +1,20 @@
 .second-sublist {
   background-color: $gray;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 33px;
+    padding-top: 42px;
+    padding-right: 40px;
+    padding-bottom: 42px;
+    grid-column-gap: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 42px;
+    padding-top: 42px;
+    padding-right: 55px;
+    padding-bottom: 62px;
+  }
 }
 
 .second-sublist__title {
