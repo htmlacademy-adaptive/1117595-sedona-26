@@ -43,19 +43,6 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 66px;
   }
-
-  &:hover {
-    background-color: $darkblue;
-  }
-
-  &:active {
-    background-color: $darkenblue;
-    color: rgb($basic-white, 0.3);
-  }
-
-  &:disabled {
-    background-color: $lightgray-input;
-  }
 }
 
 .search__map {
