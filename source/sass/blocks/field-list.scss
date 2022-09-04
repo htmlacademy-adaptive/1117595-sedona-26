@@ -95,7 +95,6 @@
     grid-gap: 28px;
     justify-items: start;
     padding-left: 53px;
-    padding-right: 53px;
 
     .field-list__item {
       width: 280px;
@@ -108,15 +107,19 @@
     box-sizing: border-box;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 63px;
+    padding-left: 62px;
   }
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: auto auto;
-    justify-items: center;
+    justify-items: end;
     grid-row-gap: 16px;
     grid-column-gap: 32px;
+
+    .field-list__item:nth-child(2n+2) {
+      justify-self: start;
+    }
 
     .field-list__item {
       width: 224px;
@@ -127,6 +130,9 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, auto);
     grid-column-gap: 64px;
+    justify-items: start;
+    padding-left: 43px;
+    padding-right: 43px;
 
     .field-list__item {
       width: auto;

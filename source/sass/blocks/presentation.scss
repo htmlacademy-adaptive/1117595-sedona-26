@@ -34,6 +34,8 @@
   @media (min-width: $tablet-width) {
     padding-left: 60px;
     padding-right: 60px;
+    margin: 0 auto;
+    max-width: 800px;
   }
 }
 
@@ -52,17 +54,19 @@
 }
 
 .presentation__preview {
-  object-fit: cover;
+  background-image: url("../img/preview-video_s.jpg");
+  background-repeat: no-repeat;
+  background-color: $bg-layer-lightgreen;
+  background-size: cover;
+  display: block;
   width: 100%;
 
-
   @media (min-width: $tablet-width) {
-    object-fit: none;
-    width: 648px;
+    background-image: url("../img/preview-video_m.jpg");
+    height: 500px;
   }
 
   @media (min-width: $desktop-width) {
-    object-fit: cover;
-    width: 800px;
+    background-image: url("../img/preview-video_l.jpg");
   }
 }
