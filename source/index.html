@@ -62,7 +62,14 @@
             <span class="info__number">— №1 —</span>
             <p class="info__legend">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img class="features__pic" src="img/photo-city_s.png" alt="фотография жилья" width="520" height="260">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/photo-city_l.jpg 1x, img/photo-city_l@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/photo-city_m.jpg 1x, img/photo-city_m@2x.jpg 2x">
+            <img class="features__pic" src="img/photo-city_s.jpg"
+              srcset="img/photo-city_s@2x.jpg 2x" alt="фотография жилья">
+          </picture>
           <ul class="features__sublist sublist">
             <li class="sublist__item sublist__item--home">
               <h3 class="sublist__title">Жилье</h3>
