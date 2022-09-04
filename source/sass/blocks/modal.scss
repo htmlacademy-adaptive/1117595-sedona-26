@@ -1,0 +1,42 @@
+.modal__title {
+  margin-top: 0;
+  font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.modal__text {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.modal {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.modal--hidden-success {
+  display: none;
+}
+
+.modal--hidden-fail {
+  display: none;
+}
+
+.modal__title--fail {
+  @media (min-width: $tablet-width) {
+    line-height: 40px;
+  }
+}

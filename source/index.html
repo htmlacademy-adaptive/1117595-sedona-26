@@ -7,16 +7,20 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
 
   <header class="main-header">
     <img class="main-header__logo" src="img/logo-sedona.png" alt="логотип седона" width="185" height="96">
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <button class="main-header__nav-toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <nav class="main-nav main-nav--close">
       <ul class="main-nav__list main-nav__wrapper">
         <li class="main-nav__item main-nav__item--current">
           <a href="#">Главная</a>
@@ -41,7 +45,7 @@
         <img class="hero__image" src="img/text-index.svg" alt="Надпись Sedona" width="229" height="39">
       </div>
       <h2 class="hero__title">
-        СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!
+        СЕДОНА — небольшой городок в АРИЗОНЕ,<br class="line-break">заслуживающий большего!
       </h2>
       <p class="hero__text">
         Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
@@ -53,46 +57,46 @@
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="features__list">
         <li class="features__item">
-          <div class="features__description info">
-            <h3 class="info__title">Настоящий городок</h3>
+          <div class="features__description info info--decor">
+            <h3 class="info__title">Настоящий <br class="line-break">городок</h3>
             <span class="info__number">— №1 —</span>
             <p class="info__legend">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <img class="features__pic" src="img/photo-city_s.png" alt="фотография жилья" width="520" height="260">
           <ul class="features__sublist sublist">
-            <li class="sublist__item">
-              <h3 class="sublist__title icon-home">Жилье</h3>
+            <li class="sublist__item sublist__item--home">
+              <h3 class="sublist__title">Жилье</h3>
               <p class="sublist__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
-            <li class="sublist__item">
-              <h3 class="sublist__title icon-food">Еда</h3>
+            <li class="sublist__item sublist__item--food">
+              <h3 class="sublist__title">Еда</h3>
               <p class="sublist__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
             </li>
-            <li class="sublist__item">
-              <h3 class="sublist__title icon-gift">Сувениры</h3>
+            <li class="sublist__item sublist__item--gift">
+              <h3 class="sublist__title">Сувениры</h3>
               <p class="sublist__description">Не только китайского, но и местного производства!</p>
             </li>
           </ul>
         <li class="features__item">
           <div class="features__description info">
-            <h3 class="info__title">Там есть Мост дьявола</h3>
+            <h3 class="info__title">Там есть <br class="line-break">Мост дьявола</h3>
             <span class="info__number">— №2 —</span>
             <p class="info__legend">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
           <img class="features__pic features__pic--order" src="img/photo-bridge_s.png" alt="фотография моста" width="520" height="260">
           <ul class="features__sublist second-sublist">
             <li class="second-sublist__item">
-              <h3 class="second-sublist__title">Небольшая площадь</h3>
+              <h3 class="second-sublist__title">Небольшая <br class="line-break">площадь</h3>
               <span class="second-sublist__number">— №3 —</span>
               <p class="second-sublist__description">Все интересные места находятся очень близко</p>
             </li>
             <li class="second-sublist__item">
-              <h3 class="second-sublist__title">Красивая дорога</h3>
+              <h3 class="second-sublist__title">Красивая <br class="line-break">дорога</h3>
               <span class="second-sublist__number">— №4 —</span>
               <p class="second-sublist__description">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
             </li>
             <li class="second-sublist__item">
-              <h3 class="second-sublist__title">Мало туристов</h3>
+              <h3 class="second-sublist__title">Мало <br class="line-break">туристов</h3>
               <span class="second-sublist__number">— №5 —</span>
               <p class="second-sublist__description">Большинство едет в гранд каньон и толпится там</p>
             </li>
@@ -105,10 +109,15 @@
       <h2 class="visually-hidden">Поиск жилья</h2>
       <div class="search__wrapper">
         <p class="search__text"><b>Заинтересовались?</b></p>
-        <p class="search__text-date">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <p class="search__text-date">Укажите предполагаемые даты поездки, <br class="line-break">и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a class="search__button button" href="#" target="_blank">Найти Гостиницу</a>
       </div>
-      <img class="search__map" src="img/map_s.png" alt="карта местности" width="320" height="350">
+      <div class="search__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52382.10277059104!2d-111.80386710054668!3d34.85920668281281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1661961314281!5m2!1sru!2sru"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="город Седона
+Аризона 86336, США"></iframe>
+      </div>
     </section>
   </main>
 
@@ -141,6 +150,8 @@
       </a>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

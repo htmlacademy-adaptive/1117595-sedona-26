@@ -1,17 +1,39 @@
 .second-sublist {
   background-color: $gray;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 33px;
+    padding-top: 42px;
+    padding-right: 40px;
+    padding-bottom: 42px;
+    grid-column-gap: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 42px;
+    padding-top: 42px;
+    padding-right: 55px;
+    padding-bottom: 62px;
+  }
 }
 
 .second-sublist__title {
   font-size: 18px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .second-sublist__number {
+  display: block;
   color: $darkengray;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
+  margin-bottom: 15px;
 }
 
 .second-sublist__description {
@@ -20,4 +42,25 @@
   line-height: 21px;
   font-weight: normal;
   margin: 0;
+}
+
+.second-sublist__item {
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    &:not(:last-child)::before {
+      content: "";
+      position: absolute;
+      width: 284px;
+      height: 1px;
+      background-color: $gray-decor-line;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
 }

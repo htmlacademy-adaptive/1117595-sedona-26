@@ -1,11 +1,23 @@
 .field-list__item {
-  margin-bottom: 15px;
+  width: 280px;
+  text-align: left;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 430px;
+  }
 }
 
 .field-list__title {
   color: $darkengray;
+  display: block;
   font-size: 14px;
   line-height: 21px;
+  text-align: left;
+  padding-left: 16px;
 }
 
 .field-list__input {
@@ -16,6 +28,33 @@
   line-height: 26px;
   font-weight: bold;
   padding: 16px 0 16px 16px;
+  width: 100%;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: $lightgray-input;
+  }
+
+  &:focus,
+  &:active {
+    background-color: transparent;
+    outline: 4px solid $lightgray-input;
+    outline-offset: -2px;
+  }
+
+  &--phone {
+    padding-right: 60px;
+    background-image: url("../img/icons/phone.png");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  &--email {
+    padding-right: 60px;
+    background-image: url("../img/icons/email.png");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
 }
 
 .field-list__input::placeholder {
@@ -26,4 +65,182 @@
 .field-list__place {
   text-transform: none;
   font-weight: bold;
+}
+
+.field-list__radio-group {
+  .field-list__item {
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 63px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+    grid-gap: 16px;
+
+    .field-list__item {
+      margin-bottom: 0;
+    }
+
+    .field-list__item:nth-child(2) {
+      justify-self: start;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 28px;
+    justify-items: start;
+    padding-left: 53px;
+
+    .field-list__item {
+      width: 280px;
+    }
+  }
+}
+
+.field-list__checkbox {
+  .field-list__item {
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 62px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: end;
+    grid-row-gap: 16px;
+    grid-column-gap: 32px;
+
+    .field-list__item:nth-child(2n+2) {
+      justify-self: start;
+    }
+
+    .field-list__item {
+      width: 224px;
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 64px;
+    justify-items: start;
+    padding-left: 43px;
+    padding-right: 43px;
+
+    .field-list__item {
+      width: auto;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.field-list__rating {
+  position: relative;
+  cursor: pointer;
+
+  &:hover::before {
+    background-color: $lightgray-input;
+  }
+
+  &:active::before {
+    background-color: $gray-control;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+.field-list__rating::before {
+  content: "";
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: $lightengray;
+  left: -64px;
+  top: -11px;
+  border-radius: 50%;
+}
+
+.field-list__rating::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: $darkengray;
+  left: -49px;
+  top: 4px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s ease-out;
+}
+
+.field-list__radio:checked ~ .field-list__rating::after {
+  transform: scale(1);
+}
+
+.field-list__radio:focus ~ .field-list__rating {
+  outline: 2px solid $darkengray;
+  outline-offset: 5px;
+}
+
+.field-list__place {
+  position: relative;
+  cursor: pointer;
+
+  &:hover::before {
+    background-color: $lightgray-input;
+  }
+
+  &:active::before {
+    background-color: $gray-control;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+.field-list__place::before {
+  content: "";
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: $lightengray;
+  left: -64px;
+  top: -12px;
+  border-radius: 4px;
+}
+
+.field-list__place::after {
+  content: "";
+  position: absolute;
+  background-image: url("data:image/svg+xml,%3Csvg width='22' height='16' viewBox='0 0 22 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.8053 1.30662L20.759 0.22188C20.4736 -0.0739599 19.9029 -0.0739599 19.6176 0.22188L8.29884 11.9569L2.40167 5.84283C2.11633 5.54699 1.54563 5.54699 1.26028 5.84283L0.21401 6.92758C-0.0713367 7.22342 -0.0713367 7.8151 0.21401 8.11094L7.63303 15.8028C7.82326 16 8.01349 16 8.20373 16C8.39396 16 8.58419 15.9014 8.77442 15.8028L21.615 2.48999C22.0906 2.19415 22.0906 1.70108 21.8053 1.30662Z' fill='%23333333'/%3E%3C/svg%3E");
+  width: 22px;
+  height: 16px;
+  left: -52px;
+  top: 5px;
+  transform: scale(0);
+  transition: 0.3s ease-out;
+}
+
+.field-list__check:checked ~ .field-list__place::after {
+  transform: scale(1);
+}
+
+.field-list__check:focus ~ .field-list__place {
+  outline: 2px solid $darkengray;
+  outline-offset: 2px;
+}
+
+.field-list__check:checked:focus ~ .field-list__place {
+  outline: 2px solid $darkengray;
+  outline-offset: 8px;
 }

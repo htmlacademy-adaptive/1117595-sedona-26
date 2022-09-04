@@ -1,13 +1,19 @@
 .modal-fail {
   background-color: $basic-white;
+  width: 320px;
+  padding: 45px 42px 35px 41px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+  }
 }
 
-.modal-fail__title {
-  font-size: 18px;
-}
+.modal-fail__button {
+  margin: 0 auto;
+  min-width: 180px;
 
-.modal-fail__text {
-  font-size: 14px;
-  line-height: 21px;
-  margin-bottom: 35px;
+  @media (min-width: $tablet-width) {
+    min-width: 272px;
+  }
 }

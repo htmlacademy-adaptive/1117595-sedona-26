@@ -4,17 +4,87 @@
   @media (min-width: $tablet-width) {
     background-color: $basic-white;
   }
+
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+
+    &--close {
+      animation-name: slide;
+      animation-duration: 2s;
+      animation-timing-function: cubic-bezier(0.07, -0.35, 0.92, 1.34);
+      animation-iteration-count: 1;
+      animation-direction: reverse;
+      animation-fill-mode: forwards;
+      display: none;
+    }
+
+    &--open {
+      animation-name: slide;
+      animation-duration: 1s;
+      animation-timing-function: cubic-bezier(0.4, -0.31, 0.68, 1.34);
+      animation-iteration-count: 1;
+      animation-direction: alternate;
+      animation-fill-mode: forwards;
+      display: block;
+      box-shadow: 0 -5px 0 5px $basic-blue;
+    }
+  }
 }
 
 .main-nav__list {
   @include list-reset;
 }
 
-/*.main-nav__item {
-  padding: 13px 10px;
-}*/
+.main-nav__item {
+  @media (max-width: $mobile-width-only) {
+    box-shadow:
+      0 1px 0 0 rgb($dark-shadow, 0.2),
+      0 2px 0 0 rgb($basic-white, 0.2) inset;
+
+    &:first-child {
+      box-shadow: 0 1px 0 0 rgb($dark-shadow, 0.2);
+    }
+
+    &:last-child {
+      box-shadow: 0 2px 0 0 rgb($basic-white, 0.2) inset;
+      position: relative;
+    }
+
+    &:last-child::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 7px;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(180deg, rgb($basic-black, 0) 0%, rgb($basic-black, 0.2) 100%);
+      z-index: 3;
+    }
+
+
+    &:hover {
+      background-color: $darkblue;
+    }
+
+    &:active {
+      background-color: $darkenblue;
+    }
+
+    &:active a {
+      color: rgb($basic-white, 0.3);
+    }
+  }
+}
 
 .main-nav__list a {
+  display: block;
+  padding: 17px 20px 12px;
   text-decoration: none;
   color: $basic-white;
   font-weight: bold;
@@ -24,6 +94,8 @@
     color: $basic-black;
     font-size: 14px;
     line-height: 21px;
+    padding-top: 18px;
+    padding-bottom: 17px;
 
     &:hover {
       color: $basic-blue;
@@ -42,11 +114,9 @@
 }
 
 .main-nav__wrapper {
-  width: 280px;
-  margin: 0 auto;
-
   @media (min-width: $tablet-width) {
     width: 768px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     column-gap: 10px;
@@ -66,10 +136,4 @@
   .main-nav__item:nth-child(4n+3) {
     grid-column: 4 / 5;
   }
-}
-
-.main-nav__toggle {
-  display: block;
-  width: 30px;
-  position: absolute;
 }

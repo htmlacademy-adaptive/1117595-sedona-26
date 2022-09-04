@@ -1,17 +1,41 @@
 .modal-success {
   background-color: $basic-white;
-}
+  width: 320px;
 
-.modal-success__title {
-  font-size: 18px;
-}
-
-.modal-success__text {
-  font-size: 14px;
-  line-height: 21px;
-  margin-bottom: 35px;
+  @media (min-width: $tablet-width) {
+    width: 640px;
+  }
 }
 
 .modal-success__button {
-  outline: 20px solid $lightengray;
+  min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 458px;
+  }
+}
+
+.modal-success__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 98px;
+  background-color: $lightengray;
+
+  @media (min-width: $tablet-width) {
+    min-height: 146px;
+  }
+}
+
+.modal-success__top {
+  padding-top: 45px;
+  padding-right: 42px;
+  padding-left: 41px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 53px;
+    padding-right: 110px;
+    padding-left: 109px;
+  }
 }
