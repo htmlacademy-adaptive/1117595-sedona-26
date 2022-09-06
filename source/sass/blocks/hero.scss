@@ -20,11 +20,16 @@
   min-height: 158px;
   background-color: $bg-layer-darkgreen;
   background-image: url("../img/background-decor_s.svg"),
-    url("../img/background_s-ca.png");
+    url("../img/background_s-ca.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 36px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-decor_s.svg"),
+      url("../img/background_s-ca@2x.jpg");
+  }
 
   .hero__image--text {
     width: 229px;
@@ -35,10 +40,15 @@
   @media (min-width: $tablet-width) {
     min-height: 290px;
     background-image: url("../img/background-decor_m.svg"),
-      url("../img/background_m-ca.png");
+      url("../img/background_m-ca.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 1200px, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-decor_m.svg"),
+        url("../img/background_m-ca@2x.jpg");
+    }
 
     .hero__image--text {
       width: 457px;

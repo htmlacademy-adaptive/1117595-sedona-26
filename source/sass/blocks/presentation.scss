@@ -61,12 +61,24 @@
   display: block;
   width: 100%;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/preview-video_s@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     background-image: url("../img/preview-video_m.jpg");
-    height: 500px;
+    min-height: 500px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/preview-video_m@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/preview-video_l.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/preview-video_l@2x.jpg");
+    }
   }
 }

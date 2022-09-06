@@ -17,9 +17,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
-    picture {
+    .features__crop {
       grid-column: span 2;
-      object-fit: cover;
+    }
+
+    .features__crop--order {
+      order: -1;
     }
   }
 }
@@ -41,6 +44,10 @@
   object-fit: cover;
   display: block;
   background-color: $bg-layer-lightgreen;
+
+  &--order {
+    background-color: $bg-layer-darkorange;
+  }
 
   @media (min-width: $tablet-width) {
     grid-column: span 2;

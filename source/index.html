@@ -62,7 +62,7 @@
             <span class="info__number">— №1 —</span>
             <p class="info__legend">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <picture>
+          <picture class="features__crop">
             <source media="(min-width: 1200px)"
               srcset="img/photo-city_l.jpg 1x, img/photo-city_l@2x.jpg 2x">
             <source media="(min-width: 768px)"
@@ -90,7 +90,13 @@
             <span class="info__number">— №2 —</span>
             <p class="info__legend">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <img class="features__pic features__pic--order" src="img/photo-bridge_s.png" alt="фотография моста" width="520" height="260">
+          <picture class="features__crop features__crop--order">
+            <source media="(min-width: 1200px)" srcset="img/photo-bridge_l.jpg 1x, img/photo-bridge_l@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-bridge_m.jpg 1x, img/photo-bridge_m@2x.jpg 2x">
+            <img class="features__pic features__pic--order"
+              src="img/photo-bridge_s.jpg" srcset="img/photo-bridge_s@2x.jpg 2x"
+              alt="фотография моста">
+          </picture>
           <ul class="features__sublist second-sublist">
             <li class="second-sublist__item">
               <h3 class="second-sublist__title">Небольшая <br class="line-break">площадь</h3>
