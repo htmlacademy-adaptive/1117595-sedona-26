@@ -41,7 +41,8 @@
 }
 
 .features__pic {
-  object-fit: cover;
+  object-fit: contain;
+  width: 100%;
   display: block;
   background-color: $bg-layer-lightgreen;
 
