@@ -6,7 +6,7 @@
 .copyright__link {
   text-decoration: none;
   color: $basic-black;
-  transition: 0.4s linear;
+  transition: 0.3s linear;
   display: flex;
   align-items: center;
 
@@ -17,16 +17,4 @@
   &:active {
     color: $gray-active;
   }
-
-  &:hover path {
-    fill: $basic-blue;
-  }
-
-  &:active path {
-    fill: $gray-active;
-  }
-}
-
-.copyright__logo path {
-  transition: 0.3s linear;
 }

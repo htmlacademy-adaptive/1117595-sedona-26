@@ -11,6 +11,7 @@
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+  transition: 0.2s linear;
 
   &:hover {
     background-color: $darkblue;
@@ -23,5 +24,11 @@
 
   &:disabled {
     background-color: $lightgray-input;
+    cursor: default;
+  }
+
+  &--disabled {
+    background-color: $lightgray-input;
+    cursor: default;
   }
 }
