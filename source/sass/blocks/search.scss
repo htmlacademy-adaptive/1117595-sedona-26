@@ -48,10 +48,22 @@
 .search__map {
   max-width: 1200px;
   margin: 0 auto;
-  background-image: url("../img/map.png");
+  background-image: url("../img/map_s.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map_s@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/map_l.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map_l@2x.png");
+    }
+  }
 }
 
 .search__map iframe {

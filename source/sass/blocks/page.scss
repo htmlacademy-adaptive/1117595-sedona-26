@@ -8,9 +8,14 @@
 .page__body {
   min-width: 320px;
   min-height: 100%;
-  margin: 0;
+  max-width: 1200px;
+  margin: 0 auto;
   background-color: $basic-white;
   color: $basic-black;
   text-transform: uppercase;
   text-align: center;
+
+  &--shadow {
+    box-shadow: 0 5px 15px rgb($dark-shadow, 0.2);
+  }
 }

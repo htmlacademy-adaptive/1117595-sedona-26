@@ -17,24 +17,32 @@
     background-color: $bg-layer-darkgreen;
     background-image: url("../img/background-decor_s.svg"),
       url("../img/background_s.jpg");
-    background-position: bottom, top;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 32px;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-decor_s.svg"),
+        url("../img/background_s@2x.jpg");
+    }
+
     @media (min-width: $tablet-width) {
-      min-height: 518px;
+      min-height: 517px;
       margin-bottom: 47px;
       background-image: url("../img/background-decor_m.svg"),
         url("../img/background_m.jpg");
-      background-repeat: no-repeat;
-      background-position: bottom, top;
       background-size: 1200px, cover;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background-decor_m.svg"),
+          url("../img/background_m@2x.jpg");
+      }
     }
 
     @media (min-width: $desktop-width) {
-      min-height: 518px;
-      background-size: 100%, cover;
+      min-height: 517px;
+      background-size: 100%;
       margin-bottom: 59px;
     }
   }
