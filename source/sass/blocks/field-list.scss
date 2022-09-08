@@ -2,12 +2,45 @@
   width: 280px;
   text-align: left;
 
+  &--phone,
+  &--mail {
+    position: relative;
+  }
+
   &:not(:last-child) {
     margin-bottom: 16px;
   }
 
   @media (min-width: $desktop-width) {
     width: 430px;
+  }
+
+  &--phone::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 58px;
+    height: 58px;
+    bottom: 0;
+    right: 0;
+    background-image: url("../img/icons/phone-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $lightgray;
+  }
+
+  &--mail::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 58px;
+    height: 58px;
+    bottom: 0;
+    right: 0;
+    background-image: url("../img/icons/mail-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $lightgray;
   }
 }
 
@@ -27,7 +60,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
-  padding: 16px 0 16px 16px;
+  padding: 16px 62px 16px 16px;
   width: 100%;
   box-sizing: border-box;
 
@@ -40,20 +73,6 @@
     background-color: transparent;
     outline: 4px solid $lightgray-input;
     outline-offset: -2px;
-  }
-
-  &--phone {
-    padding-right: 60px;
-    background-image: url("../img/icons/phone.png");
-    background-repeat: no-repeat;
-    background-position: right;
-  }
-
-  &--email {
-    padding-right: 60px;
-    background-image: url("../img/icons/email.png");
-    background-repeat: no-repeat;
-    background-position: right;
   }
 }
 

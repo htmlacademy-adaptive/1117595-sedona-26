@@ -24,13 +24,17 @@
 .form__wrapper {
   min-width: 280px;
   padding: 0 20px;
+  display: grid;
+
+  @media (max-width: $mobile-width-only) {
+    justify-items: center;
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
     min-width: 648px;
     padding-left: 60px;
     padding-right: 60px;
-    display: grid;
     grid-template-columns: 1fr 1fr;
 
     .form-group:nth-child(1n+3) {

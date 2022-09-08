@@ -101,15 +101,9 @@
   line-height: 26px;
   resize: none;
   padding: 16px;
-
-  @media (min-width: $tablet-width) {
-    min-width: 648px;
-    box-sizing: border-box;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 768px;
-  }
+  box-sizing: border-box;
+  max-width: 768px;
+  width: 100%;
 }
 
 .form-group__comment::placeholder {
