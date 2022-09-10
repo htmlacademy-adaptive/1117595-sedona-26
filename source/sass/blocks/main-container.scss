@@ -1,6 +1,11 @@
 .main-container__hero {
   margin-bottom: 10px;
 
+  .hero__title {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   @media (min-width: $tablet-width) {
     .hero__title {
       font-size: 21px;
