@@ -24,13 +24,14 @@ export const styles = () => {
       csso()
     ]))
     .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
 // HTML
 
-export const html = () => {
+const html = () => {
   return gulp.src('source/*.html')
   .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest('build'));
@@ -38,28 +39,29 @@ export const html = () => {
 
 // Scripts
 
-export const script = () => {
+const script = () => {
   return gulp.src('source/js/*.js')
   .pipe(terser())
+  .pipe(rename('script.min.js'))
   .pipe(gulp.dest('build/js'));
 }
 
 // Images
 
-export const optimizeImages = () => {
+const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(squoosh())
   .pipe(gulp.dest('build/img'));
 }
 
-export const copyImages = () => {
+const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(gulp.dest('build/img'));
 }
 
 // WebP
 
-export const createWebP = () => {
+const createWebP = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(squoosh({
     webp: {}
@@ -69,13 +71,13 @@ export const createWebP = () => {
 
 // SVG
 
-export const optimizeSvg = () => {
+const optimizeSvg = () => {
   return gulp.src('source/img/*.svg')
   .pipe(svgmin())
   .pipe(gulp.dest('build/img'));
 }
 
-export const spriteSvg = () => {
+const spriteSvg = () => {
   return gulp.src('source/img/icons/*.svg')
   .pipe(svgmin())
   .pipe(svgstore({
@@ -87,7 +89,7 @@ export const spriteSvg = () => {
 
 // Copy
 
-export const copy = (done) => {
+const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
@@ -101,7 +103,7 @@ export const copy = (done) => {
 
 // Clean
 
-export const clean = () => {
+const clean = () => {
   return deleteAsync ('build');
 }
 
@@ -126,11 +128,6 @@ const watcher = () => {
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
-
-export default gulp.series(
-  styles, server, watcher
-);
-
 // Build
 
 export const build = gulp.series (
@@ -146,3 +143,22 @@ export const build = gulp.series (
     createWebP,
   ),
 );
+
+// Default
+
+export default gulp.series (
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel (
+    styles,
+    html,
+    script,
+    optimizeSvg,
+    spriteSvg,
+    createWebP,
+  ),
+gulp.series (
+  server,
+  watcher
+));
