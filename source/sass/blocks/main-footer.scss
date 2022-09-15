@@ -1,12 +1,13 @@
 .main-footer__copyright {
   @media (max-width: $mobile-width-only) {
-    width: 120px;
+    width: 130px;
     margin: 0 auto;
   }
 }
 
 .main-footer__tag {
   margin-top: 0;
+  margin-bottom: 0;
   font-size: 21px;
   font-weight: bold;
 
@@ -44,10 +45,14 @@
     align-items: center;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 29px;
+  }
 }
 
 .main-footer {
-  padding-top: 29px;
+  padding-top: 38px;
   padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {

@@ -2,25 +2,26 @@
   background-color: $gray;
 
   @media (min-width: $tablet-width) {
-    padding-left: 33px;
-    padding-top: 42px;
+    padding-top: 41px;
     padding-right: 40px;
-    padding-bottom: 42px;
+    padding-bottom: 41px;
+    padding-left: 40px;
     grid-column-gap: 78px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 42px;
     padding-top: 42px;
-    padding-right: 55px;
+    padding-right: 36px;
     padding-bottom: 62px;
+    padding-left: 37px;
+    grid-column-gap: 73px;
   }
 }
 
 .second-sublist__title {
   font-size: 18px;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -34,6 +35,10 @@
   line-height: 21px;
   font-weight: normal;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .second-sublist__description {
@@ -42,12 +47,22 @@
   line-height: 21px;
   font-weight: normal;
   margin: 0;
+
+  &--vegas {
+    padding-right: 16px;
+    padding-left: 13px;
+
+    @media (min-width: $desktop-width) {
+      padding-right: 31px;
+      padding-left: 27px;
+    }
+  }
 }
 
 .second-sublist__item {
   @media (max-width: $mobile-width-only) {
     position: relative;
-    padding-top: 25px;
+    padding-top: 24px;
     padding-bottom: 25px;
     padding-left: 32px;
     padding-right: 32px;

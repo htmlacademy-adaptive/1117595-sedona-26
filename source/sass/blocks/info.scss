@@ -1,16 +1,24 @@
 .info {
   background-color: $basic-blue;
   color: $basic-white;
-  padding: 40px 16px 40px 22px;
+  padding: 38px 26px 37px 22px;
 
   @media (max-width: $mobile-width-only) {
     &--decor {
-      padding-top: 55px;
+      padding-top: 71px;
       background-image: url("../img/city-decor.png");
       background-repeat: no-repeat;
       background-position: top;
       background-size: 100% 37px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 30px 37px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 48px 60px 37px 60px;
   }
 }
 
@@ -21,6 +29,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    margin-bottom: 16px;
   }
 }
 
@@ -29,6 +38,10 @@
   font-size: 14px;
   line-height: 21px;
   margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+  }
 }
 
 .info__legend {
@@ -36,4 +49,11 @@
   line-height: 21px;
   font-weight: 400;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    &--bridge {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+  }
 }

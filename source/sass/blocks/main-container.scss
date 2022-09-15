@@ -1,14 +1,17 @@
 .main-container__hero {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 
   .hero__title {
-    padding-left: 30px;
+    padding-left: 25px;
     padding-right: 30px;
+    margin-bottom: 38px;
   }
 
   @media (min-width: $tablet-width) {
     .hero__title {
       font-size: 21px;
+      padding-left: 30px;
+      margin-bottom: 32px;
     }
     margin-bottom: 55px;
   }
@@ -34,7 +37,7 @@
 
     @media (min-width: $tablet-width) {
       min-height: 517px;
-      margin-bottom: 47px;
+      margin-bottom: 48px;
       background-image: url("../img/background-decor_m.svg"),
         url("../img/background_m.jpg");
       background-size: 1200px, cover;
