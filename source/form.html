@@ -54,7 +54,7 @@
       <h2 class="visually-hidden">Форма отзыва</h2>
       <form class="form form__wrapper" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="form-group">
-          <legend class="form-group__title">Представьтесь:</legend>
+          <legend class="form-group__title form-group__title--names">Представьтесь:</legend>
           <ul class="form-group__list field-list">
             <li class="field-list__item">
               <label class="field-list__title" for="name">Имя*:</label>
@@ -65,14 +65,14 @@
               <input class="field-list__input" type="text" id="surname" name="surname" value="Пустота" required>
             </li>
             <li class="field-list__item">
-              <label class="field-list__title" for="patronymic">Отчество*:</label>
-              <input class="field-list__input" type="text" id="patronymic" name="patronymic" value="Викторович" required>
+              <label class="field-list__title" for="patronymic">Отчество:</label>
+              <input class="field-list__input" type="text" id="patronymic" name="patronymic" value="Викторович">
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="form-group">
-          <legend class="form-group__title">Контактная информация:</legend>
+          <legend class="form-group__title form-group__title--contacts">Контактная информация:</legend>
           <ul class="form-group__list field-list">
             <li class="field-list__item field-list__item--phone">
               <label class="field-list__title" for="phone">Контактный телефон*:</label>
@@ -86,7 +86,7 @@
         </fieldset>
 
         <fieldset class="form-group">
-          <legend class="form-group__title form-group__title--line">Ваше общее впечатление:</legend>
+          <legend class="form-group__title form-group__title--effect form-group__title--line">Ваше общее впечатление:</legend>
           <ul class="form-group__list field-list field-list__radio-group">
             <li class="field-list__item">
               <input class="field-list__radio field-list__rating-checked visually-hidden" type="radio" id="effect-one" name="effect" checked>
@@ -104,7 +104,7 @@
         </fieldset>
 
         <fieldset class="form-group">
-          <legend class="form-group__title form-group__title--line">Посещенные<br>достопримечательности:</legend>
+          <legend class="form-group__title form-group__title--place form-group__title--line">Посещенные<br>достопримечательности:</legend>
           <ul class="form-group__list field-list field-list__checkbox">
             <li class="field-list__item">
               <input class="field-list__check field-list__check-checked visually-hidden" type="checkbox" id="bridge" name="bridge" checked>
@@ -127,7 +127,7 @@
 
         <fieldset class="form-group">
           <legend class="form-group__title form-group__title--line">Опишите свои эмоции:</legend>
-          <textarea class="form-group__comment" name="comment" cols="25" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="form-group__comment" name="comment" cols="25" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <div class="form__submit">
           <button class="form__button button" type="submit">Отправить отзыв</button>

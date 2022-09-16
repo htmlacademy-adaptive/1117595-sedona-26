@@ -13,6 +13,11 @@
 
   @media (min-width: $desktop-width) {
     width: 430px;
+
+    &--phone,
+    &--mail {
+      width: 403px;
+    }
   }
 
   &--phone::before {
@@ -163,6 +168,10 @@
 .field-list__rating {
   position: relative;
   cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    margin-left: -4px;
+  }
 
   &:hover::before {
     background-color: $lightgray-input;

@@ -1,3 +1,9 @@
+.search {
+  @media (min-width: $mobile-width-only) {
+    margin-bottom: 10px;
+  }
+}
+
 .search__text {
   font-size: 21px;
   margin-top: 0;
