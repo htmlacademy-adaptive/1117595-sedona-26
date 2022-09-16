@@ -1,6 +1,7 @@
 .modal-success {
   background-color: $basic-white;
   width: 320px;
+  min-height: 323px;
 
   @media (min-width: $tablet-width) {
     width: 640px;
@@ -9,9 +10,12 @@
 
 .modal-success__button {
   min-width: 280px;
+  font-size: 18px;
+  line-height: 26px;
 
   @media (min-width: $tablet-width) {
     min-width: 458px;
+    font-size: 21px;
   }
 }
 
@@ -29,13 +33,22 @@
 }
 
 .modal-success__top {
-  padding-top: 45px;
+  padding-top: 39px;
   padding-right: 42px;
   padding-left: 41px;
+  margin-bottom: 52px;
 
   @media (min-width: $tablet-width) {
     padding-top: 53px;
     padding-right: 110px;
     padding-left: 109px;
+  }
+
+  .modal__title {
+    margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 32px;
+    }
   }
 }
