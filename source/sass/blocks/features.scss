@@ -32,11 +32,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: 1 / -1;
-    grid-column-gap: 64px;
+    grid-column-gap: 63px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column-gap: 110px;
+    grid-column-gap: 105px;
   }
 }
 

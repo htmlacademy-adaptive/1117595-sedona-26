@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
 </head>
 
 <body class="page__body page__body--shadow">
@@ -47,14 +49,14 @@
         <img class="hero__image hero__image--text" src="img/text-index-sedona.svg" alt="Надпись Sedona" width="229" height="39">
       </div>
       <h2 class="hero__title">Оставьте свой отзыв</h2>
-      <p class="hero__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, <br class="line-break">а также о посещенных вами достопримечательностях</p>
+      <p class="hero__text">Помогите нашим отелям стать лучше! оставьте отзыв о них,&nbsp;<br class="line-break">а также о посещенных вами достопримечательностях</p>
     </header>
 
     <section class="review-form">
       <h2 class="visually-hidden">Форма отзыва</h2>
       <form class="form form__wrapper" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="form-group">
-          <legend class="form-group__title">Представьтесь:</legend>
+          <legend class="form-group__title form-group__title--names">Представьтесь:</legend>
           <ul class="form-group__list field-list">
             <li class="field-list__item">
               <label class="field-list__title" for="name">Имя*:</label>
@@ -65,14 +67,14 @@
               <input class="field-list__input" type="text" id="surname" name="surname" value="Пустота" required>
             </li>
             <li class="field-list__item">
-              <label class="field-list__title" for="patronymic">Отчество*:</label>
-              <input class="field-list__input" type="text" id="patronymic" name="patronymic" value="Викторович" required>
+              <label class="field-list__title" for="patronymic">Отчество:</label>
+              <input class="field-list__input" type="text" id="patronymic" name="patronymic" value="Викторович">
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="form-group">
-          <legend class="form-group__title">Контактная информация:</legend>
+          <legend class="form-group__title form-group__title--contacts">Контактная информация:</legend>
           <ul class="form-group__list field-list">
             <li class="field-list__item field-list__item--phone">
               <label class="field-list__title" for="phone">Контактный телефон*:</label>
@@ -86,7 +88,7 @@
         </fieldset>
 
         <fieldset class="form-group">
-          <legend class="form-group__title form-group__title--line">Ваше общее впечатление:</legend>
+          <legend class="form-group__title form-group__title--effect form-group__title--line">Ваше общее впечатление:</legend>
           <ul class="form-group__list field-list field-list__radio-group">
             <li class="field-list__item">
               <input class="field-list__radio field-list__rating-checked visually-hidden" type="radio" id="effect-one" name="effect" checked>
@@ -104,7 +106,7 @@
         </fieldset>
 
         <fieldset class="form-group">
-          <legend class="form-group__title form-group__title--line">Посещенные<br>достопримечательности:</legend>
+          <legend class="form-group__title form-group__title--place form-group__title--line">Посещенные<br>достопримечательности:</legend>
           <ul class="form-group__list field-list field-list__checkbox">
             <li class="field-list__item">
               <input class="field-list__check field-list__check-checked visually-hidden" type="checkbox" id="bridge" name="bridge" checked>
@@ -127,7 +129,7 @@
 
         <fieldset class="form-group">
           <legend class="form-group__title form-group__title--line">Опишите свои эмоции:</legend>
-          <textarea class="form-group__comment" name="comment" cols="25" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="form-group__comment" name="comment" cols="25" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <div class="form__submit">
           <button class="form__button button" type="submit">Отправить отзыв</button>
@@ -160,8 +162,8 @@
     <div class="main-footer__copyright copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт html Академии" target="_blank">
         <span class="copyright__text">Разработано</span>
-          <svg class="copyright__logo" role="img" aria-label="Логотип html Академии" width="27" height="34">
-          <use href="img/sprite.svg#logo"></use>
+        <svg class="copyright__logo" role="img" aria-label="Логотип html Академии" width="27" height="34">
+          <use href="img/sprite.svg#logohtml"></use>
         </svg>
       </a>
     </div>
@@ -171,7 +173,7 @@
   <div class="modal modal--hidden-fail">
     <div class="modal-fail">
       <h2 class="modal__title modal__title--fail">
-        Что-то пошло <br class="line-break">не так!
+        Что-то пошло&nbsp;<br class="line-break">не так!
       </h2>
       <p class="modal__text">
         Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
@@ -183,12 +185,12 @@
   <div class="modal modal--hidden-success">
     <div class="modal-success">
       <div class="modal-success__top">
-      <h2 class="modal__title">
-        Ваш отзыв отправлен!
-      </h2>
-      <p class="modal__text">
-        Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
-      </p>
+        <h2 class="modal__title">
+          Ваш отзыв отправлен!
+        </h2>
+        <p class="modal__text">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+        </p>
       </div>
       <div class="modal-success__bottom">
         <button class="modal-success__button button">Закрыть окно</button>
@@ -196,7 +198,7 @@
     </div>
   </div>
 
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

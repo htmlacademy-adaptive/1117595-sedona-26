@@ -1,15 +1,21 @@
+.presentation {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 84px;
+  }
+}
+
 .presentation__title {
   font-weight: bold;
   margin: 0 0 30px 0;
   padding-top: 17px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 58px;
-    font-size: 30px;
-  }
-
-  @media (min-width: $tablet-width) {
     padding-top: 62px;
+    font-size: 30px;
   }
 }
 
@@ -18,11 +24,11 @@
   font-size: 14px;
   line-height: 21px;
   margin-top: 0;
-  margin-bottom: 38px;
+  margin-bottom: 41px;
   padding: 0 25px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 88px;
   }
 }
 
@@ -51,6 +57,10 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+  @media (max-width: $mobile-width-only) {
+    transform: translate(-35%, -47%);
+  }
 }
 
 .presentation__preview {

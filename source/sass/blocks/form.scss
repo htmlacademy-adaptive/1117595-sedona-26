@@ -3,6 +3,11 @@
   line-height: 21px;
   color: rgb($basic-black, 0.6);
   text-align: right;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
 }
 
 .form__submit {
@@ -14,6 +19,7 @@
     width: 648px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,6 +57,10 @@
       left: 50%;
       right: 50%;
       transform: translate(-50%);
+
+      @media (min-width: $desktop-width) {
+        left: 51%;
+      }
     }
   }
 
@@ -68,6 +78,7 @@
 
   @media (min-width: $tablet-width) {
     width: 324px;
+    padding-left: 8px;
   }
 
   @media (min-width: $desktop-width) {
