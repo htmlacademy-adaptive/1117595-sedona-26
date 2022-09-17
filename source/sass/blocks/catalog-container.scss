@@ -27,6 +27,10 @@
 
   .hero__title {
     margin-bottom: 28px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 32px;
+    }
   }
 
   .hero__background {
