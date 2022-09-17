@@ -19,3 +19,9 @@
     color: $gray-active;
   }
 }
+
+.copyright__logo {
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    padding-right: 5px;
+  }
+}

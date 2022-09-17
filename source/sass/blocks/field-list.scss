@@ -5,10 +5,20 @@
   &--phone,
   &--mail {
     position: relative;
+
+    .field-list__title {
+      @media (min-width: $desktop-width) {
+        padding-left: 18px;
+      }
+    }
   }
 
   &:not(:last-child) {
     margin-bottom: 16px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 15px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -65,9 +75,13 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
-  padding: 16px 62px 16px 16px;
+  padding: 16px 62px 17px 18px;
   width: 100%;
   box-sizing: border-box;
+
+  @media (max-width: $mobile-width-only) {
+    padding-left: 15px;
+  }
 
   &:hover {
     background-color: $lightgray-input;
@@ -78,6 +92,12 @@
     background-color: transparent;
     outline: 4px solid $lightgray-input;
     outline-offset: -2px;
+  }
+
+  &--name {
+    @media (min-width: $tablet-width) {
+      padding-left: 14px;
+    }
   }
 }
 
