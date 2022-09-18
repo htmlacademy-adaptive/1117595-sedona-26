@@ -22,7 +22,7 @@
       <img class="main-header__logo" src="img/logo-sedona.svg" alt="логотип седона" width="185" height="96">
     </a>
     <button class="main-header__nav-toggle" type="button">
-      <span class="visually-hidden">Открыть, закрыть меню</span>
+      <span class="visually-hidden">Открыть, закрыть меню.</span>
     </button>
     <nav class="main-nav main-nav--close">
       <ul class="main-nav__list main-nav__wrapper">
@@ -43,32 +43,35 @@
   </header>
 
   <main class="form-container">
-    <h1 class="visually-hidden">Страница обратной связи</h1>
+    <h1 class="visually-hidden">Страница обратной связи.</h1>
     <header class="form-container__hero hero">
       <div class="hero__background">
-        <img class="hero__image hero__image--text" src="img/text-index-sedona.svg" alt="Надпись Sedona" width="229" height="39">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/text-index-sedona_l.svg 1x">
+          <img class="hero__image hero__image--text" src="img/text-index-sedona.svg" alt="Надпись Sedona" width="229" height="39">
+        </picture>
       </div>
       <h2 class="hero__title">Оставьте свой отзыв</h2>
       <p class="hero__text">Помогите нашим отелям стать лучше! оставьте отзыв о них,&nbsp;<br class="line-break">а также о посещенных вами достопримечательностях</p>
     </header>
 
     <section class="review-form">
-      <h2 class="visually-hidden">Форма отзыва</h2>
+      <h2 class="visually-hidden">Форма отзыва.</h2>
       <form class="form form__wrapper" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="form-group">
           <legend class="form-group__title form-group__title--names">Представьтесь:</legend>
           <ul class="form-group__list field-list">
             <li class="field-list__item">
               <label class="field-list__title" for="name">Имя*:</label>
-              <input class="field-list__input" type="text" id="name" name="name" value="Пётр" required>
+              <input class="field-list__input field-list__input--name" type="text" id="name" name="name" value="Пётр" required>
             </li>
             <li class="field-list__item">
               <label class="field-list__title" for="surname">Фамилия*:</label>
-              <input class="field-list__input" type="text" id="surname" name="surname" value="Пустота" required>
+              <input class="field-list__input field-list__input--name" type="text" id="surname" name="surname" value="Пустота" required>
             </li>
             <li class="field-list__item">
               <label class="field-list__title" for="patronymic">Отчество:</label>
-              <input class="field-list__input" type="text" id="patronymic" name="patronymic" value="Викторович">
+              <input class="field-list__input field-list__input--name" type="text" id="patronymic" name="patronymic" value="Викторович">
             </li>
           </ul>
         </fieldset>
@@ -145,17 +148,17 @@
     <ul class="main-footer__social-list social">
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="#" target="_blank">
-          <span class="visually-hidden">Вконтакте</span>
+          <span class="visually-hidden">Вконтакте.</span>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link social__link--telegram" href="#" target="_blank">
-          <span class="visually-hidden">Телеграм</span>
+          <span class="visually-hidden">Телеграм.</span>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link social__link--youtube" href="#" target="_blank">
-          <span class="visually-hidden">Ютуб</span>
+          <span class="visually-hidden">Ютуб.</span>
         </a>
       </li>
     </ul>
@@ -189,7 +192,7 @@
           Ваш отзыв отправлен!
         </h2>
         <p class="modal__text">
-          Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам.&nbsp;<br> В ближайшее время мы опубликуем его на сайте.
         </p>
       </div>
       <div class="modal-success__bottom">

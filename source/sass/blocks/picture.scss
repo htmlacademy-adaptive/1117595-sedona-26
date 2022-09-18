@@ -2,6 +2,10 @@
   font-size: 14px;
   line-height: 21px;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 2px;
+  }
 }
 
 .picture__description-author {

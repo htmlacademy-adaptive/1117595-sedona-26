@@ -1,19 +1,38 @@
 .modal-fail {
   background-color: $basic-white;
   width: 320px;
-  padding: 45px 42px 35px 41px;
+  padding: 45px 42px 0 41px;
   box-sizing: border-box;
+  min-height: 280px;
 
   @media (min-width: $tablet-width) {
     width: 400px;
+    min-height: 347px;
+    padding-top: 47px;
+    padding-right: 37px;
+  }
+
+  .modal__title {
+    margin-bottom: 24px;
+  }
+
+  .modal__text {
+    margin-bottom: 28px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 48px;
+    }
   }
 }
 
 .modal-fail__button {
   margin: 0 auto;
   min-width: 180px;
+  font-size: 18px;
+  line-height: 26px;
 
   @media (min-width: $tablet-width) {
     min-width: 272px;
+    font-size: 21px;
   }
 }

@@ -7,6 +7,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
+    padding-top: 5px;
   }
 }
 
@@ -29,7 +30,7 @@
 
 .form__wrapper {
   min-width: 280px;
-  padding: 0 20px;
+  padding: 0 18px;
   display: grid;
 
   @media (max-width: $mobile-width-only) {
@@ -75,6 +76,7 @@
   cursor: pointer;
   box-sizing: border-box;
   width: 280px;
+  font-family: inherit;
 
   @media (min-width: $tablet-width) {
     width: 324px;
