@@ -35,6 +35,10 @@
   display: none;
 }
 
+.modal--show {
+  display: flex;
+}
+
 .modal__title--fail {
   @media (min-width: $tablet-width) {
     line-height: 40px;
