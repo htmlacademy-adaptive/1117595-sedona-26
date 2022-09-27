@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Dima Lysogor](https://up.htmlacademy.ru/adaptive/26/user/1117595).
-* Наставник: [Кристина Новикова](https://htmlacademy.ru/profile/stina).
+* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
 
